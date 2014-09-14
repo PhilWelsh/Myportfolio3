@@ -1,0 +1,6 @@
+C:\Users\Welsh\Desktop\WEB\Websites\MyPortfolio3\MyPortfolio3\bin\MyPortfolio3.dll.config
+C:\Users\Welsh\Desktop\WEB\Websites\MyPortfolio3\MyPortfolio3\bin\MyPortfolio3.dll
+C:\Users\Welsh\Desktop\WEB\Websites\MyPortfolio3\MyPortfolio3\bin\MyPortfolio3.pdb
+C:\Users\Welsh\Desktop\WEB\Websites\MyPortfolio3\MyPortfolio3\obj\Debug\MyPortfolio3.csprojResolveAssemblyReference.cache
+C:\Users\Welsh\Desktop\WEB\Websites\MyPortfolio3\MyPortfolio3\obj\Debug\MyPortfolio3.dll
+C:\Users\Welsh\Desktop\WEB\Websites\MyPortfolio3\MyPortfolio3\obj\Debug\MyPortfolio3.pdb
