@@ -1,94 +1,303 @@
 ﻿<!DOCTYPE html>
 <html>
-    <head lang="en">
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="StyleSheet.css">
-        <script type="text/javascript" src="jQuery-2.1.1.js"></script>
-        <script type="text/javascript" src="Main.js"></script>
-
-        <!--<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">-->
-        <title></title>
-    </head>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+    <title></title>
+</head>
 <body>
     <div class="overflow-hide">
-        <div class="topmenu shadow heightfull centerdiv pad-topbot-20">
+        <div id="topmenu" class="shadow heightfull centerdiv pad-topbot-20">
+            <div class="coverer"></div>
             <ul class="pos-rel">
-                <li><a id="about"><b>about</b></a></li>
-                <li><a id="experience"><b>experience</b></a></li>
-                <li><a id="skills"><b>skills</b></a></li>
-                <li><a id="contact"><b>Contact</b></a></li>
+                <li><a class="navbutton" data-attr-scroll="#about"><b>about</b></a></li>
+                <li><a class="navbutton" data-attr-scroll="#experience"><b>experience</b></a></li>
+                <li><a class="navbutton" data-attr-scroll="#skills"><b>skills</b></a></li>
+                <li><a class="navbutton" data-attr-scroll="#stats"><b>stats</b></a></li>
+                <li><a class="navbutton" data-attr-scroll="#contact"><b>Contact</b></a></li>
             </ul>
         </div>
-        <div class="textcenter title bar shadow pad-top-20 overflow-hide pos-rel">
+        <div id="title" class="textcenter bar shadow pad-top-20 pos-rel seperator">
             <div class="paralax">
                 <div id="bg"></div>
-                <div id="profilepic1" class="testremove"></div>
-                <div id="profilepic2" class="testremove"></div>
-                <div id="profilepic3" class="testremove"></div>
-                <div id="profilepic4"></div>
-            </div>
-            <div class="text">
-                <div class="centerdiv">
+                <div id="name">
                     <h1>Phil Welsh</h1>
-                    <h2>Web Designer</h2>
+                    <h2>Web developer</h2>
                     <p>Welcome to my web space</p>
                 </div>
-            </div>
-        </div>
-        <div class="textcenter about bar pos-rel shadow pad-top-20 overflow-hide">
-            <div class="text width-per-48 inline-block floatleft">
-                <h1>About</h1>
-                <h2>I'm a graphic artist and web developer born and raised in Newcastle, England</h2>
-                <p>I am constantly developing my skills and looking for full time employment as an opportunity to progress further</p>
-            </div>
-            <div class="width-per-48 inline-block heightfull pos-abs right">
-                <div class="profilepic heightfull">
-
+                <div class="overflow-hide widthfull">
+                    <div id="profilepic4"></div>
                 </div>
             </div>
         </div>
-        <div class="experience bar ">
-            <div class="contactstripe height-400">
+        <div id="about" class="textcenter bar pos-rel shadow pad-top-20 overflow-hide">
+            <div id="bgblur"></div>
+            <div class="text col">
+                <h1>About</h1>
+                <h3>Graphic artist and web developer born and raised in Newcastle, England</h3>
+                <p>I am constantly developing my skills and looking for full time employment as an opportunity to progress further</p>
+            </div>
+            <div class="colmarg"></div>
+            <div class="text col right traits-list">
+                <ul>
+                    <li>Committed</li>
+                    <li>Hardworking</li>
+                    <li>Outgoing</li>
+                    <li>Resourceful</li>
+
+                </ul>
+            </div>
+        </div>
+        <div id="experience" class="seperator bar ">
+            <div id="bg2"></div>
+            <div class="col">
                 <div class="text">
                     <h1>Experience</h1>
                     <p>
                         I have a long background in art. During university i studied Creative Digital Media where i learned
                         a lot about computer aided design.
                         After graduating i travelled to Asia and spent some time teaching english, studying chinese and deciding where to go with my career.
+                    </p>
+                </div>
+            </div>
+            <div class = "colmarg"></div>
+            <div class="col">
+                <div class="text">
+                    <p>
                         I met several friends through networking that pointed me in the direction of web development, and upon returning to England it
                         is now my goal to develop my skills and use them to make fantastic websites.
                     </p>
                 </div>
             </div>
         </div>
-        <div class="skills bar shadow">
-            <div class="text">
-                <h1>Skills</h1>
-                <p></p>
+        <div id="skills" class="bar shadow clearfix">
+            <div id="bg2blur"></div>
+            <div class="col col1">
+                <div class="skillbox back-gray hideme">
+                    <input type="radio" id="radio6" name="skill" value="6" checked>
+                    <div id="originalskills" class="hide">
+                        <h1>Skills</h1>
+                        <hr />
+                        <h2>Please choose a skill from the menu to the right.</h2>
+                    </div>
+                    <input type="radio" id="radio1" name="skill" value="1">
+                    <div id="psskills" class="hide">
+                        <h1>Photoshop</h1>
+                        <hr />
+                        <h2>
+                            From my degree course as well as longstanding personal interest, I have learned a lot about photoshop
+                            from drawing skills and graphic design to photo-manipulation and rendering techniques.
+                            I have also used several similar programs including Adobe Illustrator
+                        </h2>
+                    </div>
+                    <input type="radio" id="radio2" name="skill" value="2">
+                    <div id="htmlskills" class="hide">
+                        <h1>HTML</h1>
+                        <hr />
+                        <h2>I am very confident with my HTML abilities. Using correct markup</h2>
+                    </div>
+                    <input type="radio" id="radio3" name="skill" value="3">
+                    <div id="cssskills" class="hide">
+                        <h1>CSS</h1>
+                        <hr />
+                        <h2>SASS, CSS, using hacks and ways to make website more efficient</h2>
+                    </div>
+                    <input type="radio" id="radio4" name="skill" value="4">
+                    <div id="jsskills" class="hide">
+                        <h1>Javascript/jQuery</h1>
+                        <hr />
+                        <h2>beginner js but with a good knowledge of theory, used multiple jquery plugins, understood and adapted.</h2>
+                    </div>
+                    <input type="radio" id="radio5" name="skill" value="5">
+                    <div id="csskills" class="hide">
+                        <h1>C#</h1>
+                        <hr />
+                        <h2>very little knowledge, but with lots of interest</h2>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="contact bar">
-            <div class="text">
-                <h1>Contact</h1>
-                <p></p>
+            <div class="col col2">
+                <div class="skillbox2">
+                    <div id="skillbuttons" class="hideme">
+                        <img src="logo.png" class="skillbutton ps" />
+                        <a class="nth1">
+                            <label for="radio1"></label>
+                        </a><img src="logo.png" class="skillbutton html" />
+                        <a class="nth2">
+
+                            <label for="radio2"></label>
+                        </a><img src="logo.png" class="skillbutton query" />
+                        <a class="nth3">
+
+                            <label for="radio3"></label>
+                        </a><img src="logo.png" class="skillbutton js" />
+                        <a class="nth4">
+
+                            <label for="radio4"></label>
+                        </a>
+                        <img src="logo.png" class="skillbutton cs" />
+                        <a class="nth5">
+
+                            <label for="radio5"></label>
+                        </a>
+                    </div>
+                    <div class="skillchart hideme">
+                        <div class="bars nth1">
+                            <div class="pos-rel">
+                                <div class="filler">
+                                    <div class="percent">90%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bars nth2">
+                            <div class="pos-rel">
+                                <div class="filler"><div class="percent">95%</div></div>
+                            </div>
+                        </div>
+                        <div class="bars nth3">
+                            <div class="pos-rel">
+                                <div class="filler"><div class="percent">90%</div></div>
+                            </div>
+                        </div>
+                        <div class="bars nth4">
+                            <div class="pos-rel">
+                                <div class="filler"><div class="percent">45%</div></div>
+                            </div>
+                        </div>
+                        <div class="bars nth5">
+                            <div class="pos-rel">
+                                <div class="filler"><div class="percent">15%</div></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    <div class="footer height-50 back-black">
+        <div id="stats" class="seperator bar">
+            <h1>Stats</h1>
+
+            <div class="levels hideme heightfull abilities">
+                <div class="level">
+                    <div class="ability">
+                        <p>
+                            Drawing
+                        </p>
+                    </div>
+                    <div class="progress">
+                        <div class="filler nth1"></div>
+                    </div>
+                </div>
+                <div class="level">
+                    <div class="ability">
+                        <p>
+                            Animating
+                        </p>
+                    </div>
+                    <div class="progress">
+                        <div class="filler nth2"></div>
+                    </div>
+                </div>
+                <div class="level">
+                    <div class="ability">
+                        <p>
+                            Programming
+                        </p>
+                    </div>
+                    <div class="progress">
+                        <div class="filler nth3"></div>
+                    </div>
+                </div><div class="level">
+                    <div class="ability">
+                        <p>
+                            Alcohol-Consumption
+                        </p>
+                    </div>
+                    <div class="progress">
+                        <div class="filler nth4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="heightfull abilities">
+                <div class="character">
+                    <div class="lvbar">
+                        <div class="filler">
+
+                        </div>
+                    </div>
+                    <h5>Phil Welsh</h5>
+                    <p>Lv.7</p>
+                </div>
+            </div>
+        </div>
+        <input type="checkbox" id="contactopen">
+        <div id="contact" class="bar">
+            <div class="col text width-250">
+                <div class="pos-rel inline-block">
+                    <h1>Contact</h1>
+                    <div class="down">
+                        <label for="contactopen"></label>
+                    </div>
+                </div>
+                <div class="contactinfo">
+                    <h2>Phone</h2>
+                    <p> 07763 525 072</p>
+                    <h2>Email</h2>
+                    <p>phil@philwelsh.com</p>
+                    <h2>LinkedIn</h2>
+                    <p>uk.linkedin.com/in/welshphil</p>
+                </div>
+            </div>
+            <div class="colmarg"></div>
+            <div class="col text where">
+                <h1>Where i am</h1>
+                <div id="map-canvas"></div>
+            </div>
+        </div>
+    </div>
+    <div id="returntotop">
+        <div id="up"></div>
+    </div>
+    <div id="footer" class="height-50 back-black">
         <h3 class="floatleft"><i>©</i>2014 Phil Welsh</h3>
         <ul>
             <li>
-                <a>Contact</a>
+                <a href="uk.linkedin.com/in/welshphil">LinkedIn</a>
             </li>
             <li>
-                <a>LinkedIn</a>
-            </li>
-            <li>
-                <a>Email</a>
+                <a href="phil@philwelsh.com">Email</a>
             </li>
 
         </ul>
     </div>
+    <script type="text/javascript" src="jQuery-2.1.1.js"></script>
+    <script src="js/skrollr.js"></script>
+    <script type="text/javascript" src="jquery.scrollTo-1.4.13/jquery.scrollTo.js"></script>
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoqba3sw35AIrcyy608VEDp803KLuUJGE">
+    </script>
+    <script type="text/javascript">
+        function initialize() {
 
+
+            var mapOptions = {
+                center: { lat: 55.019261, lng: -1.664701 },
+
+                zoom: 8
+            };
+            var map = new google.maps.Map(document.getElementById('map-canvas'),
+                mapOptions);
+
+
+            //lat: 54.811922, lng: -1.439208 map.getCenter() lat: 55.019261, lng: -1.664701
+            var marker = new google.maps.Marker({
+                position: map.getCenter(),
+                map: map,
+                title: 'Click to zoom'
+            });
+
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <script type="text/javascript" src="Main.js"></script>
 </body>
 </html>
