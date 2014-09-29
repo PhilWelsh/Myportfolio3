@@ -58,10 +58,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DecorStyleSheet.scss" />
+    <Content Include="fonts.css">
+      <DependentUpon>fonts.scss</DependentUpon>
+    </Content>
+    <Content Include="fonts.min.css">
+      <DependentUpon>fonts.css</DependentUpon>
+    </Content>
     <Content Include="FontsStylesheet.scss" />
     <Content Include="HeightStyleSheet.scss" />
     <Content Include="OperandsStyleSheet.scss" />
-    <Content Include="StyleSheet.scss" />
     <Content Include="DecorStyleSheet.css.map">
       <DependentUpon>DecorStyleSheet.css</DependentUpon>
     </Content>
@@ -74,8 +79,9 @@
     <Content Include="OperandsStyleSheet.css.map">
       <DependentUpon>OperandsStyleSheet.css</DependentUpon>
     </Content>
-    <Content Include="StyleSheet.css.map">
-      <DependentUpon>StyleSheet.css</DependentUpon>
+    <Content Include="fonts.scss" />
+    <Content Include="fonts.css.map">
+      <DependentUpon>fonts.css</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -117,9 +123,13 @@
     <Content Include="StyleSheet.css">
       <DependentUpon>StyleSheet.scss</DependentUpon>
     </Content>
+    <Content Include="StyleSheet.css.map">
+      <DependentUpon>StyleSheet.css</DependentUpon>
+    </Content>
     <Content Include="StyleSheet.min.css">
       <DependentUpon>StyleSheet.css</DependentUpon>
     </Content>
+    <Content Include="StyleSheet.scss" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -1,103 +1,112 @@
 ﻿$(function () {
+    //slick.js
+    $('.single-item').slick();
+
+        // Init Skrollr
+        var s = skrollr.init({
+            render: function (data) {
+                //Debugging - Log the current scroll position.
+                //console.log(data.curTop);
+            }
+        });
 
 
+//    // Detect if the browser is IE or not.
+//    // If it is not IE, we assume that the browser is NS.
+//    var IE = document.all ? true : false
 
-    // Detect if the browser is IE or not.
-    // If it is not IE, we assume that the browser is NS.
-    var IE = document.all ? true : false
+//    // If NS -- that is, !IE -- then set up for mouse capture
+//    if (!IE) document.captureEvents(Event.MOUSEMOVE)
 
-    // If NS -- that is, !IE -- then set up for mouse capture
-    if (!IE) document.captureEvents(Event.MOUSEMOVE)
+//    // Set-up to use getMouseXY function onMouseMove
+//    document.onmousemove = getMouseXY;
 
-    // Set-up to use getMouseXY function onMouseMove
-    document.onmousemove = getMouseXY;
+//    // Temporary variables to hold mouse x-y pos.s
+//    var tempX = 0;
+//    var tempY = 0;
 
-    // Temporary variables to hold mouse x-y pos.s
-    var tempX = 0;
-    var tempY = 0;
+//    var objectArray = new Array();
 
-    var objectArray = new Array();
+//    fillObjectArray();
+//    positionDivs();
+//    var windowWidth = $(window).width();
 
-    fillObjectArray();
-    positionDivs();
-    var windowWidth = $(window).width();
+//    function fillObjectArray() {
+//        var bgDiv = document.getElementById("bg");
+//        var bgX = 0; //position div from half width of the page
+//        var bgY = 40;
+//        var bgFactor = 0.01; //parallax shift factor, the bigger the value, the more it shift for parallax movement
+//        var bgWidth = windowWidth;
 
-    function fillObjectArray() {
-        var bgDiv = document.getElementById("bg");
-        var bgX = 0; //position div from half width of the page
-        var bgY = 40;
-        var bgFactor = 0.01; //parallax shift factor, the bigger the value, the more it shift for parallax movement
-        var bgWidth = windowWidth;
+//        var bgArray = new Array();
+//        bgArray.push(bgDiv, bgX, bgY, bgFactor, bgWidth);
+//        objectArray.push(bgArray);
 
-        var bgArray = new Array();
-        bgArray.push(bgDiv, bgX, bgY, bgFactor, bgWidth);
-        objectArray.push(bgArray);
+//        var pp4Div = document.getElementById("profilepic4");
+//        var pp4X = -29;
+//        var pp4Y = 50;
+//        var pp4Factor = -0.1;
+//        var pp4Width = 300;
 
-        var pp4Div = document.getElementById("profilepic4");
-        var pp4X = -29;
-        var pp4Y = 50;
-        var pp4Factor = -0.1;
-        var pp4Width = 300;
+//        var pp4Array = new Array();
+//        pp4Array.push(pp4Div, pp4X, pp4Y, pp4Factor, pp4Width);
+//        objectArray.push(pp4Array);
 
-        var pp4Array = new Array();
-        pp4Array.push(pp4Div, pp4X, pp4Y, pp4Factor, pp4Width);
-        objectArray.push(pp4Array);
+//        var bgblurDiv = document.getElementById("bgblur");
+//        var bgblurX = 0; //position div from half width of the page
+//        var bgblurY = 40;
+//        var bgblurFactor = 0.01; //parallax shift factor, the bigger the value, the more it shift for parallax movement
+//        var bgblurWidth = windowWidth;
 
-        var bgblurDiv = document.getElementById("bgblur");
-        var bgblurX = 0; //position div from half width of the page
-        var bgblurY = 40;
-        var bgblurFactor = 0.01; //parallax shift factor, the bigger the value, the more it shift for parallax movement
-        var bgblurWidth = windowWidth;
+//        var bgblurArray = new Array();
+//        bgblurArray.push(bgblurDiv, bgblurX, bgblurY, bgblurFactor, bgblurWidth);
+//        objectArray.push(bgblurArray);
+//}
+//    // Main function to retrieve mouse x-y pos.s
 
-        var bgblurArray = new Array();
-        bgblurArray.push(bgblurDiv, bgblurX, bgblurY, bgblurFactor, bgblurWidth);
-        objectArray.push(bgblurArray);
-}
-    // Main function to retrieve mouse x-y pos.s
+//    function getMouseXY(e) {
+//        if (IE) {
+//            // grab the x-y pos.s if browser is IE
+//            tempX = event.clientX + document.body.scrollLeft
+//            tempY = event.clientY + document.body.scrollTop
+//        }
+//        else {
+//            // grab the x-y pos.s if browser is NS
+//            tempX = e.pageX
+//            tempY = e.pageY
+//        }
+//        // catch possible negative values in NS4
+//        if (tempX < 0) { tempX = 0 }
+//        if (tempY < 0) { tempY = 0 }
 
-    function getMouseXY(e) {
-        if (IE) {
-            // grab the x-y pos.s if browser is IE
-            tempX = event.clientX + document.body.scrollLeft
-            tempY = event.clientY + document.body.scrollTop
-        }
-        else {
-            // grab the x-y pos.s if browser is NS
-            tempX = e.pageX
-            tempY = e.pageY
-        }
-        // catch possible negative values in NS4
-        if (tempX < 0) { tempX = 0 }
-        if (tempY < 0) { tempY = 0 }
+//        moveDiv(tempX, tempY);
 
-        moveDiv(tempX, tempY);
+//        return true
+//    }
 
-        return true
-    }
+//    function moveDiv(tempX, tempY) {
+//        for (var i = 0; i < 2; i++) {
+//            objectArray[0][0].style.left = (yourDivPositionX / 5 - 10 + '%');
+//            objectArray[0][0].style.top = (yourDivPositionY * 22 - 220 + 'px');
+//            objectArray[2][0].style.left = (yourDivPositionX / 5 - 10 + '%');
+//            objectArray[2][0].style.top = (yourDivPositionY * 22 - 220 + 'px');
+//            var yourDivPositionX = objectArray[i][3] * (0.5 * windowWidth - tempX) + objectArray[i][1];
+//            var yourDivPositionY = objectArray[i][3] * (0.5 * windowWidth - tempY) + objectArray[i][1];
+//            objectArray[1][0].style.left = (yourDivPositionX / 30 + 70 + '%');
+//            objectArray[1][0].style.top = (yourDivPositionY / 10 +10 + 'px');
 
-    function moveDiv(tempX, tempY) {
-        for (var i = 0; i < 2; i++) {
-            objectArray[0][0].style.left = (yourDivPositionX / 5 - 10 + '%');
-            objectArray[0][0].style.top = (yourDivPositionY * 22 - 220 + 'px');
-            objectArray[2][0].style.left = (yourDivPositionX / 5 - 10 + '%');
-            objectArray[2][0].style.top = (yourDivPositionY * 22 - 220 + 'px');
-            var yourDivPositionX = objectArray[i][3] * (0.5 * windowWidth - tempX) + objectArray[i][1];
-            var yourDivPositionY = objectArray[i][3] * (0.5 * windowWidth - tempY) + objectArray[i][1];
-            objectArray[1][0].style.left = (yourDivPositionX / 30 + 70 + '%');
-            objectArray[1][0].style.top = (yourDivPositionY / 10 +10 + 'px');
+//            //console.log("position = " + yourDivPositionX);
+//        }
+//    }
 
-            //console.log("position = " + yourDivPositionX);
-        }
-    }
-
-    function positionDivs() {
-        for (var i = 0; i < 2; i++) {
-            objectArray[i][0].style.left = objectArray[i][1] + "%";
-            objectArray[i][0].style.top = objectArray[i][2] + "%";
-        }
-        objectArray[2][0].style.left = objectArray[i][1] + "%";
-        objectArray[2][0].style.top = objectArray[i][2] + "%";
-    }
+//    function positionDivs() {
+//        for (var i = 0; i < 2; i++) {
+//            objectArray[i][0].style.left = objectArray[i][1] + "%";
+//            objectArray[i][0].style.top = objectArray[i][2] + "%";
+//        }
+//        objectArray[2][0].style.left = objectArray[i][1] + "%";
+//        objectArray[2][0].style.top = objectArray[i][2] + "%";
+//    }
 
     //SCROLL TO
     $("#topmenu li a").on("click", function () {
@@ -115,6 +124,12 @@
     $(window).scroll(function () {
 
         //SCROLL TO TOP BOTTOM
+        
+            if ($(document).scrollTop() > 100) {
+                $("#topmenu").addClass("small");
+            } else {
+                $("#topmenu").removeClass("small");
+            }
 
         if ($(this).scrollTop()>100) {
             $('#returntotop').fadeIn(700);

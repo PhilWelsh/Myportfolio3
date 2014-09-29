@@ -1,4 +1,9 @@
 ﻿@font-face {
+    font-family: korriban-regular;
+    src: url('fonts/korriban-regular.otf') format('opentype');
+}
+
+@font-face {
     font-family: ptarmi__;
     src: url('fonts/ptarmi__.ttf') format('truetype');
 }
@@ -32,6 +37,24 @@
     font-family: Chunkfive;
     src: url('fonts/Chunkfive.otf') format('opentype');
 }
+
+@font-face {
+    font-family: cabin-bold;
+    src: url('fonts/cabin-bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: raleway-regular;
+    src: url('fonts/raleway-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: existence-light;
+    src: url('fonts/existence-light.otf') format('opentype');
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 
 @mixin background-linear-gradient($from,$to) {
@@ -110,10 +133,14 @@ $faster: all .25s ease-in-out;
         -webkit-filter: hue-rotate(-155deg) !important;
     }
 }
-
 //JS//
 
+
+
 //GENERAL RULES
+.align-right {
+    text-align: right;
+}
 
 ::selection {
     color: black;
@@ -121,10 +148,11 @@ $faster: all .25s ease-in-out;
 }
 
 body {
+    height: 100% !important;
     padding: 0;
     margin: 0;
     position: relative;
-    height: auto;
+    background-color: black;
     //fonts
     font-family: "HarabaraMaisDemo";
 
@@ -135,7 +163,7 @@ body {
 
     li {
         list-style: none;
-        font-family: "Chunkfive";
+        font-family: raleway-regular;
         text-transform: capitalize;
     }
     /*h1, h2, h3, h4, h5, p {
@@ -167,6 +195,13 @@ body {
 }
 //div{border-bottom:1px solid black;}
 //GENERAL RULES
+
+.fullpage {
+    margin: 0;
+    overflow: hidden;
+    border: 3px solid gray;
+}
+
 .col {
     width: 42%;
     display: inline-block;
@@ -393,16 +428,46 @@ a.nth1 {
 
 //WEBSITE START
 
-#topmenu {
-    background-color: #9196B6;
-    border-bottom: solid 5px black;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    height: 35px;
-    z-index: 9;
+#topmenu.small {
+    padding-bottom: 0;
+    top: -50px;
+    height: 115px;
+    @include transition($fast);
 
-    .coverer {
+    ul {
+        margin-top: 115px;
+    }
+}
+
+
+#topmenu {
+    background: url(borderrocks2.png);
+    background-size: 100% 100%;
+    background-color: #414554;
+    border-bottom: solid 2px black;
+    margin: 0;
+    padding: 20px 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100px;
+    z-index: 9;
+    @include transition($fast);
+    border-bottom: 30px solid black;
+
+    h1 {
+        position: absolute;
+        color: white;
+        font-family: existence-light;
+        margin-top: 25px;
+        float: left;
+
+        b {
+            font-size: 5rem;
+        }
+    }
+    /*.coverer {
         position: absolute;
         top: 0;
         right: -10px;
@@ -420,13 +485,22 @@ a.nth1 {
         -o-animation-timing-function: linear;
         -webkit-animation-timing-function: linear;
         animation-timing-function: linear;
-    }
+    }*/
+    ul {
+        @include transition($fast);
+        margin-top: 122px;
 
-    li {
-        font-size: 1.8rem;
-        margin: 0 20px;
-        color: rgb(246, 238, 235);
-        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        li {
+            font-size: 1.3rem;
+            padding: 0 5px;
+            color: #B5AB94;
+            @include transition($faster);
+            /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+            &:hover {
+                background-color: #f66a06;
+                color: rgb(51, 55, 69);
+            }
+        }
     }
 
     a {
@@ -436,88 +510,100 @@ a.nth1 {
 
 .bar {
     /*height: 100%;*/
-    padding: 0 4%;
+    padding: 0 10%;
     /*border-top: 5px solid #141728;
     border-bottom: 5px solid #141728;*/
 }
 
-/*.seperator {
-    margin: 10px 0px;
-}*/
+.seperator {
+    height: 20px;
+    background-color: rgb(101, 91, 91);
+}
+
+#slide-1 .bcg {
+    background-image: url('newcastle1.jpg');
+    background-size: auto 150%;
+}
+
+#slide-2 .bcg {
+    background-image: url('newcastle1.jpg');
+    background-size: 100% 450px;
+}
 
 #title {
-    height: 450px;
+    height: 500px;
+    margin-top: 160px;
     font-family: ptarmi__;
-    margin-top: 80px;
     /*border-top: 5px solid #141728;
     border-bottom: 5px solid #141728;*/
     overflow: hidden;
 
-    .paralax {
-        #name, #profilepic4, #bg {
-            position: absolute;
-            width: 500px;
-            height: 100%;
-        }
+    #name, #profilepic4, #bg {
+        position: absolute;
+        width: 500px;
+        height: 85%;
+    }
 
-        .overflow-hide {
-            width: 100%;
-            height: 450px;
-            top: 0;
-            left: 0;
-            position: absolute;
-        }
+    .overflow-hide {
+        width: 100%;
+        height: 500px;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
 
-        #bg {
-            /*left: 50%;
+    #bg {
+        /*left: 50%;
             width: 200%;
             height: 150%;*/
-            width: 120%;
-            height: auto;
-            min-height: 1024px;
-            background: url(newcastle2.jpg) repeat;
-            background-size: cover;
-            background-color: rgb(238, 238, 238);
-            /*-webkit-filter: blur(5px);*/
+        width: 120%;
+        height: auto;
+        min-height: 1024px;
+        background: url(newcastle2.jpg) repeat;
+        background-size: cover;
+        background-color: rgb(238, 238, 238);
+        /*-webkit-filter: blur(5px);*/
+    }
+
+    #name {
+        margin-top: 300px;
+        left: 0;
+        width: 100%;
+        font-size: 1.6em;
+        z-index: 2;
+
+        p, h1, h2 {
+            clear: both;
+            float: left;
+            margin-top: 0;
+            padding-left: 10%;
+            /*text-shadow: -1px 1px 0 #FFF, 1px 0px 0 #FFF, -5px 3px 0 #FFF, 1px 1px 0 #FFF;*/
         }
 
-        #name {
-            left: 0;
-            width: 100%;
-            font-size: 1.6em;
-            z-index: 2;
-
-            p, h1, h2 {
-                clear: both;
-                float: left;
-                margin-top: 0;
-                padding-left: 100px;
-                /*text-shadow: -1px 1px 0 #FFF, 1px 0px 0 #FFF, -5px 3px 0 #FFF, 1px 1px 0 #FFF;*/
-            }
-
-            h1 {
-                -webkit-text-stroke: 1px white;
-                color: transparent;
-            }
-
-            p {
-                bottom: 10px;
-                font-size: 1.5rem;
-                position: absolute;
-                text-shadow: -1px 1px 0 #FFF, 1px 0px 0 #FFF, -5px 3px 0 #FFF, 1px 1px 0 #FFF;
-            }
+        h1 {
+            -webkit-text-stroke: 1px white;
+            color: transparent;
         }
 
-        #profilepic4 {
-            background: url(mex.png) no-repeat;
-            background-size: 400px;
+        p {
+            bottom: 10px;
+            font-size: 1.5rem;
+            position: absolute;
+            text-shadow: -1px 1px 0 #FFF, 1px 0px 0 #FFF, -5px 3px 0 #FFF, 1px 1px 0 #FFF;
         }
+    }
+
+    #profilepic4 {
+        background: url(mex.png) no-repeat;
+        background-size: 350px;
+        right: -150px;
+        bottom: 0;
     }
 }
 
 #about {
     text-align: left;
-    background-color: rgba(72, 72, 92, 0.8);
+    background-color: #33313C;
 
     #bgblur {
         margin-top: -450px;
@@ -532,17 +618,23 @@ a.nth1 {
         z-index: -2;
     }
 
+    .desc{
+        background-color: rgba(251, 251, 251, 0.85);
+margin: 175px 0;
+padding: 15px;
+    }
+
     h1 {
-        color: white;
+        color: rgb(123, 123, 123)
     }
 
     h3 {
-        color: rgb(197, 197, 223);
+        color: #8E8EBA;
         font-size: 1.5em;
     }
 
     p {
-        color: rgb(205, 176, 176);
+        color: #cdb0b0;
         font-size: 1.3em;
     }
 
@@ -552,7 +644,35 @@ a.nth1 {
         color: rgb(217, 217, 217);
 
         li {
+            position: relative;
             margin-top: 30px;
+            padding: 5px;
+            margin-left: 30px;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAFklEQVQYV2NkIBIwEqmOYago/E+MhwAqdgEHt7mlHwAAAABJRU5ErkJggg==);
+            background-color: rgb(35, 34, 43);
+            color: rgb(137, 131, 111);
+            font-weight: bold;
+            border: solid black;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                left: -20px;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 20px 20px 0;
+                border-color: transparent #33313C transparent transparent;
+                top: 0;
+                right: 0px;
+            }
         }
     }
 }
@@ -560,28 +680,79 @@ a.nth1 {
 #experience {
     background-color: #F8F8FA;
 
+    .text {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .slick-prev, .slick-next {
+        width: 40px;
+        height: 40px;
+
+        &:before {
+            font-size: 35px;
+        }
+    }
+
+    .slick-prev {
+        left: -50px;
+    }
+
+    .slick-next {
+        right: -50px;
+    }
+
+    b {
+        position: absolute;
+        top: 27px;
+        left: 7px;
+        color: white;
+        z-index: 9;
+    }
+
     p {
         font-size: 1.5rem;
+        background-color: white;
+        padding: 20px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 35px 35px 0 0;
+            border-color: #414554 transparent transparent transparent;
+            top: 24px;
+            left: 0px;
+        }
     }
 }
 
 #skills {
-    background-color: #373944;
+    background-color: #F5F5FB;
     height: 100%;
+
+    div {
+        max-width: 1000px;
+        margin: auto;
+    }
 
     .skillbox {
         margin: 100px 0;
+        margin-bottom: 0;
         padding: 30px;
         border-radius: 5px;
     }
 
     .skillbox2 {
         margin: 100px 0;
+        margin-top: 20px;
         padding: 0;
     }
 
     .back-gray {
-        background-color: #B5B4C0;
+        background-color: #FCFBFC;
     }
 
     hr {
@@ -592,7 +763,7 @@ a.nth1 {
 }
 
 #stats {
-    padding: 100px 4%;
+    padding: 100px 10%;
     height: 100%;
     background-color: #F8F8F8;
     position: relative;
@@ -706,6 +877,10 @@ input[type="checkbox"]:checked ~ div {
 
     .where {
         opacity: 1 !important;
+
+        h1 {
+            width: 270px;
+        }
     }
 }
 
@@ -793,7 +968,8 @@ input[type="checkbox"]:checked ~ div {
     color: white;
     font-size: 1.1rem;
     height: 50px;
-    padding: 0 4%;
+    padding: 0 10%;
+    width: 80%;
 
     h3 {
         cursor: default;
@@ -830,7 +1006,7 @@ input[type="checkbox"]:checked ~ div {
 }
 
 .text {
-    padding: 75px 0;
+    padding: 175px 0;
 }
 /*//hoverunderlines
   .hovunder span:before, body .mainmenu span:after {
@@ -877,8 +1053,8 @@ input[type="checkbox"]:checked ~ div {
 
 @media screen and (max-width: 1020px) {
     #topmenu li {
-        font-size: 1.5rem !important;
-        margin: 0 15px !important;
+        font-size: 1.2rem !important;
+        margin: 0 5px !important;
     }
 }
 
@@ -892,5 +1068,116 @@ input[type="checkbox"]:checked ~ div {
         h2, h1, p {
             padding-left: 0 !important;
         }
+    }
+}
+
+.triangles {
+    background: url(backtriswhite.png) repeat;
+    position: absolute;
+    background-size: 270px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.triangles {
+    .triangle1 {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 43px 86px 41px 167px;
+        border-color: gray transparent transparent transparent;
+        left: 10%;
+    }
+
+    .triangle2 {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 40.5px 138.25px 40.5px 0;
+        border-color: transparent gray transparent transparent;
+        left: 13%;
+        top: -20px;
+        @include rotate(-55deg);
+    }
+
+    .triangle3 {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 78.25px 59.125px 0 171px;
+        border-color: gray transparent transparent transparent;
+        right: 0;
+    }
+
+    .triangle4 {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 21px 31px 254px;
+        border-color: transparent transparent gray transparent;
+        top: -10px;
+        left: -10%;
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-9deg);
+    }
+
+    .triangle5 {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 56.25px 41.125px 0 175px;
+        left: 30%;
+        border-color: gray transparent transparent transparent;
+    }
+
+    .triangle6 {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 27.25px 129.125px 0 171px;
+        left: 47%;
+        border-color: gray transparent transparent transparent;
+    }
+
+    .triangle7 {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 48.25px 36.125px 0 110px;
+        border-color: gray transparent transparent transparent;
+        left: 70%;
+    }
+
+    .triangle8 {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 155.25px 50.125px 0 78px;
+        border-color: gray transparent transparent transparent;
+        right: -8%;
+    }
+
+    .triangle9 {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 78.25px 59.125px 0 171px;
+        border-color: gray transparent transparent transparent;
+        left: 0;
+    }
+
+    .triangle10 {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 78.25px 59.125px 0 171px;
+        border-color: gray transparent transparent transparent;
+        left: 0;
     }
 }

@@ -1,4 +1,9 @@
-﻿@font-face {
+﻿@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@font-face {
+  font-family: korriban-regular;
+  src: url('fonts/korriban-regular.otf') format('opentype'); }
+
+@font-face {
   font-family: ptarmi__;
   src: url('fonts/ptarmi__.ttf') format('truetype'); }
 
@@ -25,6 +30,18 @@
 @font-face {
   font-family: Chunkfive;
   src: url('fonts/Chunkfive.otf') format('opentype'); }
+
+@font-face {
+  font-family: cabin-bold;
+  src: url('fonts/cabin-bold.otf') format('opentype'); }
+
+@font-face {
+  font-family: raleway-regular;
+  src: url('fonts/raleway-regular.ttf') format('truetype'); }
+
+@font-face {
+  font-family: existence-light;
+  src: url('fonts/existence-light.otf') format('opentype'); }
 
 /*@import "HeightStyleSheet";*/
 .inline {
@@ -182,15 +199,19 @@
     -webkit-filter: drop-shadow(0px 3px 3px #777) !important;
     -webkit-filter: hue-rotate(-155deg) !important; }
 
+.align-right {
+  text-align: right; }
+
 ::selection {
   color: black;
   background: gray; }
 
 body {
+  height: 100% !important;
   padding: 0;
   margin: 0;
   position: relative;
-  height: auto;
+  background-color: black;
   font-family: "HarabaraMaisDemo";
   /*h1, h2, h3, h4, h5, p {
         text-shadow: 0 5px 4px rgba(150, 150, 150, 0.9);
@@ -200,7 +221,7 @@ body {
     margin: 0; }
   body li {
     list-style: none;
-    font-family: "Chunkfive";
+    font-family: raleway-regular;
     text-transform: capitalize; }
   body h4 {
     margin: 5px 0; }
@@ -216,6 +237,11 @@ body {
     color: inherit;
     cursor: pointer;
     @includ transition(all 0.25s ease-in-out); }
+
+.fullpage {
+  margin: 0;
+  overflow: hidden;
+  border: 3px solid gray; }
 
 .col {
   width: 42%;
@@ -372,73 +398,119 @@ a.nth1 {
   to {
     width: 0%; } }
 
+#topmenu.small {
+  padding-bottom: 0;
+  top: -50px;
+  height: 115px;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+  #topmenu.small ul {
+    margin-top: 115px; }
+
 #topmenu {
-  background-color: #9196B6;
-  border-bottom: solid 5px black;
-  padding: 20px 0;
+  background: url(borderrocks2.png);
+  background-size: 100% 100%;
+  background-color: #414554;
+  border-bottom: solid 2px black;
+  margin: 0;
+  padding: 20px 10%;
   position: fixed;
-  width: 100%;
-  height: 35px;
-  z-index: 9; }
-  #topmenu .coverer {
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100px;
+  z-index: 9;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 30px solid black;
+  /*.coverer {
+        position: absolute;
+        top: 0;
+        right: -10px;
+        width: 100%;
+        z-index: 2;
+        background-color: inherit;
+        border-left: 10px solid white;
+        height: 100%;
+        @include animation(topReveal);
+        -o-animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        @include animation-duration(2s);
+        -moz-animation-timing-function: linear;
+        -o-animation-timing-function: linear;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }*/ }
+  #topmenu h1 {
     position: absolute;
-    top: 0;
-    right: -10px;
-    width: 100%;
-    z-index: 2;
-    background-color: inherit;
-    border-left: 10px solid white;
-    height: 100%;
-    -moz-animation: topReveal;
-    -o-animation: topReveal;
-    -webkit-animation: topReveal;
-    animation: topReveal;
-    -o-animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -moz-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -moz-animation-timing-function: linear;
-    -o-animation-timing-function: linear;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear; }
-  #topmenu li {
-    font-size: 1.8rem;
-    margin: 0 20px;
-    color: #f6eeeb;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+    color: white;
+    font-family: existence-light;
+    margin-top: 25px;
+    float: left; }
+    #topmenu h1 b {
+      font-size: 5rem; }
+  #topmenu ul {
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    margin-top: 122px; }
+    #topmenu ul li {
+      font-size: 1.3rem;
+      padding: 0 5px;
+      color: #B5AB94;
+      -moz-transition: all 0.25s ease-in-out;
+      -o-transition: all 0.25s ease-in-out;
+      -webkit-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
+      /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/ }
+      #topmenu ul li:hover {
+        background-color: #f66a06;
+        color: #333745; }
   #topmenu a {
     margin: 0; }
 
 .bar {
   /*height: 100%;*/
-  padding: 0 4%;
+  padding: 0 10%;
   /*border-top: 5px solid #141728;
     border-bottom: 5px solid #141728;*/ }
 
-/*.seperator {
-    margin: 10px 0px;
-}*/
+.seperator {
+  height: 20px;
+  background-color: #655b5b; }
+
+#slide-1 .bcg {
+  background-image: url('newcastle1.jpg');
+  background-size: auto 150%; }
+
+#slide-2 .bcg {
+  background-image: url('newcastle1.jpg');
+  background-size: 100% 450px; }
+
 #title {
-  height: 450px;
+  height: 500px;
+  margin-top: 160px;
   font-family: ptarmi__;
-  margin-top: 80px;
   /*border-top: 5px solid #141728;
     border-bottom: 5px solid #141728;*/
   overflow: hidden; }
-  #title .paralax #name, #title .paralax #profilepic4, #title .paralax #bg {
+  #title #name, #title #profilepic4, #title #bg {
     position: absolute;
     width: 500px;
-    height: 100%; }
-  #title .paralax .overflow-hide {
+    height: 85%; }
+  #title .overflow-hide {
     width: 100%;
-    height: 450px;
+    height: 500px;
     top: 0;
     left: 0;
     position: absolute; }
-  #title .paralax #bg {
+  #title #bg {
     /*left: 50%;
             width: 200%;
             height: 150%;*/
@@ -449,32 +521,35 @@ a.nth1 {
     background-size: cover;
     background-color: #eeeeee;
     /*-webkit-filter: blur(5px);*/ }
-  #title .paralax #name {
+  #title #name {
+    margin-top: 300px;
     left: 0;
     width: 100%;
     font-size: 1.6em;
     z-index: 2; }
-    #title .paralax #name p, #title .paralax #name h1, #title .paralax #name h2 {
+    #title #name p, #title #name h1, #title #name h2 {
       clear: both;
       float: left;
       margin-top: 0;
-      padding-left: 100px;
+      padding-left: 10%;
       /*text-shadow: -1px 1px 0 #FFF, 1px 0px 0 #FFF, -5px 3px 0 #FFF, 1px 1px 0 #FFF;*/ }
-    #title .paralax #name h1 {
+    #title #name h1 {
       -webkit-text-stroke: 1px white;
       color: transparent; }
-    #title .paralax #name p {
+    #title #name p {
       bottom: 10px;
       font-size: 1.5rem;
       position: absolute;
       text-shadow: -1px 1px 0 #FFF, 1px 0px 0 #FFF, -5px 3px 0 #FFF, 1px 1px 0 #FFF; }
-  #title .paralax #profilepic4 {
+  #title #profilepic4 {
     background: url(mex.png) no-repeat;
-    background-size: 400px; }
+    background-size: 350px;
+    right: -150px;
+    bottom: 0; }
 
 #about {
   text-align: left;
-  background-color: rgba(72, 72, 92, 0.8); }
+  background-color: #33313C; }
   #about #bgblur {
     margin-top: -450px;
     position: absolute;
@@ -486,10 +561,14 @@ a.nth1 {
     background-repeat: no-repeat;
     -webkit-filter: blur(4px);
     z-index: -2; }
+  #about .desc {
+    background-color: rgba(251, 251, 251, 0.85);
+    margin: 175px 0;
+    padding: 15px; }
   #about h1 {
-    color: white; }
+    color: #7b7b7b; }
   #about h3 {
-    color: #c5c5df;
+    color: #8E8EBA;
     font-size: 1.5em; }
   #about p {
     color: #cdb0b0;
@@ -499,32 +578,91 @@ a.nth1 {
     font-size: 20px;
     color: #d9d9d9; }
     #about .traits-list li {
-      margin-top: 30px; }
+      position: relative;
+      margin-top: 30px;
+      padding: 5px;
+      margin-left: 30px;
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAFklEQVQYV2NkIBIwEqmOYago/E+MhwAqdgEHt7mlHwAAAABJRU5ErkJggg==);
+      background-color: #23222b;
+      color: #89836f;
+      font-weight: bold;
+      border: solid black; }
+      #about .traits-list li:before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: -20px; }
+      #about .traits-list li:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 20px 20px 0;
+        border-color: transparent #33313C transparent transparent;
+        top: 0;
+        right: 0px; }
 
 #experience {
   background-color: #F8F8FA; }
+  #experience .text {
+    max-width: 1000px;
+    margin: auto; }
+  #experience .slick-prev, #experience .slick-next {
+    width: 40px;
+    height: 40px; }
+    #experience .slick-prev:before, #experience .slick-next:before {
+      font-size: 35px; }
+  #experience .slick-prev {
+    left: -50px; }
+  #experience .slick-next {
+    right: -50px; }
+  #experience b {
+    position: absolute;
+    top: 27px;
+    left: 7px;
+    color: white;
+    z-index: 9; }
   #experience p {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    background-color: white;
+    padding: 20px; }
+    #experience p:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 35px 35px 0 0;
+      border-color: #414554 transparent transparent transparent;
+      top: 24px;
+      left: 0px; }
 
 #skills {
-  background-color: #373944;
+  background-color: #F5F5FB;
   height: 100%; }
+  #skills div {
+    max-width: 1000px;
+    margin: auto; }
   #skills .skillbox {
     margin: 100px 0;
+    margin-bottom: 0;
     padding: 30px;
     border-radius: 5px; }
   #skills .skillbox2 {
     margin: 100px 0;
+    margin-top: 20px;
     padding: 0; }
   #skills .back-gray {
-    background-color: #B5B4C0; }
+    background-color: #FCFBFC; }
   #skills hr {
     height: 3px;
     background-color: black;
     border-color: transparent; }
 
 #stats {
-  padding: 100px 4%;
+  padding: 100px 10%;
   height: 100%;
   background-color: #F8F8F8;
   position: relative; }
@@ -601,6 +739,8 @@ input[type="checkbox"]:checked ~ div {
     transform: rotateX(180deg); }
   input[type="checkbox"]:checked ~ div .where {
     opacity: 1 !important; }
+    input[type="checkbox"]:checked ~ div .where h1 {
+      width: 270px; }
 
 #contact {
   height: 80px;
@@ -682,7 +822,8 @@ input[type="checkbox"]:checked ~ div {
   color: white;
   font-size: 1.1rem;
   height: 50px;
-  padding: 0 4%; }
+  padding: 0 10%;
+  width: 80%; }
   #footer h3 {
     cursor: default;
     text-shadow: 0px 3px 3px rgba(150, 150, 150, 0.9);
@@ -707,7 +848,7 @@ input[type="checkbox"]:checked ~ div {
   box-shadow: 0px 3px 6px 0px #323232, 0px 0px 5px 0px #A8A5A5; }
 
 .text {
-  padding: 75px 0; }
+  padding: 175px 0; }
 
 /*//hoverunderlines
   .hovunder span:before, body .mainmenu span:after {
@@ -752,8 +893,8 @@ input[type="checkbox"]:checked ~ div {
 
 @media screen and (max-width: 1020px) {
   #topmenu li {
-    font-size: 1.5rem !important;
-    margin: 0 15px !important; } }
+    font-size: 1.2rem !important;
+    margin: 0 5px !important; } }
 
 @media screen and (max-width: 660px) {
   #topmenu li {
@@ -761,5 +902,98 @@ input[type="checkbox"]:checked ~ div {
     margin: 0 5px !important; }
   #name h2, #name h1, #name p {
     padding-left: 0 !important; } }
+
+.triangles {
+  background: url(backtriswhite.png) repeat;
+  position: absolute;
+  background-size: 270px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3; }
+
+.triangles .triangle1 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 43px 86px 41px 167px;
+  border-color: gray transparent transparent transparent;
+  left: 10%; }
+.triangles .triangle2 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40.5px 138.25px 40.5px 0;
+  border-color: transparent gray transparent transparent;
+  left: 13%;
+  top: -20px;
+  -webkit-transform: rotate(-55deg);
+  -moz-transform: rotate(-55deg);
+  -ms-transform: rotate(-55deg);
+  -o-transform: rotate(-55deg);
+  transform: rotate(-55deg); }
+.triangles .triangle3 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 78.25px 59.125px 0 171px;
+  border-color: gray transparent transparent transparent;
+  right: 0; }
+.triangles .triangle4 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 21px 31px 254px;
+  border-color: transparent transparent gray transparent;
+  top: -10px;
+  left: -10%;
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-9deg); }
+.triangles .triangle5 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 56.25px 41.125px 0 175px;
+  left: 30%;
+  border-color: gray transparent transparent transparent; }
+.triangles .triangle6 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 27.25px 129.125px 0 171px;
+  left: 47%;
+  border-color: gray transparent transparent transparent; }
+.triangles .triangle7 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 48.25px 36.125px 0 110px;
+  border-color: gray transparent transparent transparent;
+  left: 70%; }
+.triangles .triangle8 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 155.25px 50.125px 0 78px;
+  border-color: gray transparent transparent transparent;
+  right: -8%; }
+.triangles .triangle9 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 78.25px 59.125px 0 171px;
+  border-color: gray transparent transparent transparent;
+  left: 0; }
+.triangles .triangle10 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 78.25px 59.125px 0 171px;
+  border-color: gray transparent transparent transparent;
+  left: 0; }
 
 /*# sourceMappingURL=StyleSheet.css.map */
