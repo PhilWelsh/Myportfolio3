@@ -244,7 +244,7 @@ body {
   border: 3px solid gray; }
 
 .col {
-  width: 42%;
+  width: 40%;
   display: inline-block; }
 
 .colmarg {
@@ -398,21 +398,23 @@ a.nth1 {
   to {
     width: 0%; } }
 
-#topmenu.small {
+#s.small {
   padding-bottom: 0;
-  top: -50px;
-  height: 115px;
+  top: 0;
+  height: 62px;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
-  #topmenu.small ul {
-    margin-top: 115px; }
+  #s.small h1 {
+    margin-top: -25px; }
+  #s.small ul {
+    margin-top: 62px; }
 
 #topmenu {
   background: url(borderrocks2.png);
   background-size: 100% 100%;
-  background-color: #414554;
+  background-color: #EBEBEB;
   border-bottom: solid 2px black;
   margin: 0;
   padding: 20px 10%;
@@ -451,7 +453,11 @@ a.nth1 {
     color: white;
     font-family: existence-light;
     margin-top: 25px;
-    float: left; }
+    float: left;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
     #topmenu h1 b {
       font-size: 5rem; }
   #topmenu ul {
@@ -459,9 +465,10 @@ a.nth1 {
     -o-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-    margin-top: 122px; }
+    margin-top: 122px;
+    background-color: black; }
     #topmenu ul li {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       padding: 0 5px;
       color: #B5AB94;
       -moz-transition: all 0.25s ease-in-out;
@@ -486,12 +493,8 @@ a.nth1 {
   background-color: #655b5b; }
 
 #slide-1 .bcg {
-  background-image: url('newcastle1.jpg');
-  background-size: auto 150%; }
-
-#slide-2 .bcg {
-  background-image: url('newcastle1.jpg');
-  background-size: 100% 450px; }
+  background: url('newcastle2blur.jpg');
+  background-size: cover; }
 
 #title {
   height: 500px;
@@ -518,6 +521,7 @@ a.nth1 {
     height: auto;
     min-height: 1024px;
     background: url(newcastle2.jpg) repeat;
+    -webkit-filter: blur(3px);
     background-size: cover;
     background-color: #eeeeee;
     /*-webkit-filter: blur(5px);*/ }
@@ -549,63 +553,45 @@ a.nth1 {
 
 #about {
   text-align: left;
-  background-color: #33313C; }
-  #about #bgblur {
-    margin-top: -450px;
+  /*background:url(backtris1.png);*/
+  background-size: 250px;
+  background-color: #F6F6F6; }
+  #about #stripe {
+    background: url(origami3.jpg) no-repeat;
+    background-size: 1001px 1000px;
+    background-attachment: fixed;
     position: absolute;
-    width: 120%;
-    height: auto;
-    min-height: 1024px;
-    background-image: url(newcastle2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-filter: blur(4px);
-    z-index: -2; }
+    width: 50%;
+    height: 100%;
+    left: 5%;
+    opacity: 0.4; }
   #about .desc {
-    background-color: rgba(251, 251, 251, 0.85);
+    background-color: white;
     margin: 175px 0;
     padding: 15px; }
   #about h1 {
-    color: #7b7b7b; }
+    color: #515151; }
   #about h3 {
-    color: #8E8EBA;
+    color: #61619B;
     font-size: 1.5em; }
   #about p {
-    color: #cdb0b0;
+    color: #956A6A;
     font-size: 1.3em; }
   #about .traits-list {
+    float: right;
     vertical-align: top;
     font-size: 20px;
     color: #d9d9d9; }
     #about .traits-list li {
       position: relative;
       margin-top: 30px;
-      padding: 5px;
+      padding: 5px 0;
       margin-left: 30px;
-      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAFklEQVQYV2NkIBIwEqmOYago/E+MhwAqdgEHt7mlHwAAAABJRU5ErkJggg==);
-      background-color: #23222b;
       color: #89836f;
-      font-weight: bold;
-      border: solid black; }
-      #about .traits-list li:before {
-        content: "";
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        left: -20px; }
-      #about .traits-list li:after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 20px 20px 0;
-        border-color: transparent #33313C transparent transparent;
-        top: 0;
-        right: 0px; }
+      font-weight: bold; }
 
 #experience {
-  background-color: #F8F8FA; }
+  background: #d8adad; }
   #experience .text {
     max-width: 1000px;
     margin: auto; }
@@ -613,7 +599,8 @@ a.nth1 {
     width: 40px;
     height: 40px; }
     #experience .slick-prev:before, #experience .slick-next:before {
-      font-size: 35px; }
+      font-size: 35px;
+      color: #545151; }
   #experience .slick-prev {
     left: -50px; }
   #experience .slick-next {
@@ -642,9 +629,11 @@ a.nth1 {
 #skills {
   background-color: #F5F5FB;
   height: 100%; }
-  #skills div {
-    max-width: 1000px;
+  #skills > div {
+    max-width: 500px;
     margin: auto; }
+  #skills .width-per-48 {
+    width: 48%; }
   #skills .skillbox {
     margin: 100px 0;
     margin-bottom: 0;
@@ -652,10 +641,7 @@ a.nth1 {
     border-radius: 5px; }
   #skills .skillbox2 {
     margin: 100px 0;
-    margin-top: 20px;
     padding: 0; }
-  #skills .back-gray {
-    background-color: #FCFBFC; }
   #skills hr {
     height: 3px;
     background-color: black;
@@ -703,7 +689,8 @@ a.nth1 {
     #stats .abilities .level {
       position: relative;
       height: 25%;
-      width: 100%; }
+      width: 100%;
+      z-index: 2; }
       #stats .abilities .level .progress {
         width: 100%;
         height: 15%;
@@ -738,6 +725,8 @@ input[type="checkbox"]:checked ~ div {
     -webkit-transform: rotateX(180deg);
     transform: rotateX(180deg); }
   input[type="checkbox"]:checked ~ div .where {
+    right: 10%;
+    position: absolute;
     opacity: 1 !important; }
     input[type="checkbox"]:checked ~ div .where h1 {
       width: 270px; }
@@ -754,6 +743,12 @@ input[type="checkbox"]:checked ~ div {
     width: 250px; }
   #contact h2, #contact p {
     margin: 5px; }
+  #contact h2 {
+    color: #cecece;
+    font-size: 1.5em; }
+  #contact p {
+    color: #767676;
+    font-size: 1.2rem; }
   #contact .down {
     position: absolute;
     display: inline;
@@ -845,68 +840,72 @@ input[type="checkbox"]:checked ~ div {
     border-color: black; }
 
 .shadow {
-  box-shadow: 0px 3px 6px 0px #323232, 0px 0px 5px 0px #A8A5A5; }
+  box-shadow: 0px 3px 6px 0px #DADADA, 0px 0px 5px 0px #A7A7A7; }
 
 .text {
   padding: 175px 0; }
 
-/*//hoverunderlines
-  .hovunder span:before, body .mainmenu span:after {
-    width: 20px;
-    content: "";
-    height: 1px;
-    margin: auto;
-    text-align: center;
-    background: #bfc4c6;
-    position: absolute;
-    bottom: -14px; }
-  .hovunder span:before {
-    right: 50%;
-    transition: all 0.5s ease-in-out; }
-  .hovunder span:after {
-    left: 50%;
-    transition: all 0.5s ease-in-out; }
-  .hovunder a:hover span:before {
-    width: 50%;
-    transition: all 0.5s ease-in-out; }
-  .hovunder a:hover span:after {
-    width: 50%;
-    transition: all 0.5s ease-in-out; }
-  .hovunder span:before, body .contactbar span:after {
-    width: 0px;
-    content: "";
-    height: 2px;
-    margin: auto;
-    text-align: center;
-    background: #bfc4c6;
-    position: absolute;
-    bottom: -10px; }
-  .hovunder span:before {
-    right: 50%;
-    transition: all 0.5s ease-in-out; }
-  .hovunder span:after {
-    left: 50%;
-    transition: all 0.5s ease-in-out; }*/
 @media screen and (max-width: 1240px) {
   #profilepic4 {
-    margin-left: -100px; } }
+    margin-left: -100px; }
+  #slide-1 .bcg {
+    /*background: url('newcastle2blurcrop.jpg')no-repeat;*/
+    left: -20%; } }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1065px) {
   #topmenu li {
-    font-size: 1.2rem !important;
-    margin: 0 5px !important; } }
-
-@media screen and (max-width: 660px) {
-  #topmenu li {
-    font-size: 1.2rem !important;
     margin: 0 5px !important; }
+  #slide-1 .bcg {
+    background-size: 1040px 585px; }
+  #skills .width-per-48 {
+    width: 80% !important;
+    float: none; }
+  #skills .skillbox2 {
+    margin-top: 0; } }
+
+@media screen and (min-width: 1500px) {
+  #slide-1 .bcg {
+    background: url('newcastle2blur.jpg');
+    background-size: 100% 150%; } }
+
+@media screen and (max-width: 680px) {
+  .colmarg {
+    display: none; }
+  #topmenu ul {
+    position: fixed;
+    right: 5%;
+    width: 90%; }
+    #topmenu ul li {
+      margin: 0 5px !important; }
   #name h2, #name h1, #name p {
-    padding-left: 0 !important; } }
+    padding-left: 0 !important; }
+  input[type="checkbox"]:checked ~ div {
+    height: 650px !important; }
+  #contact .width-250 {
+    width: 100%;
+    margin: auto; }
+  #contact .where {
+    right: 10%;
+    position: initial; } }
+
+@media screen and (max-width: 540px) {
+  .character {
+    right: 0; }
+  #topmenu ul li {
+    margin: 0 !important; } }
+
+@media screen and (max-width: 420px) {
+  #returntotop {
+    right: 0; } }
+
+@media screen and (max-width: 340px) {
+  #returntotop {
+    bottom: 140px; } }
 
 .triangles {
-  background: url(backtriswhite.png) repeat;
+  background: url(backtris1.png) repeat;
   position: absolute;
-  background-size: 270px;
+  background-size: 450px;
   top: 0;
   left: 0;
   width: 100%;

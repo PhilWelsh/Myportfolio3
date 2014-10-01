@@ -1,4 +1,8 @@
-﻿@font-face {
+﻿//BREAKS ON 400PX WIDTH
+
+
+
+@font-face {
     font-family: korriban-regular;
     src: url('fonts/korriban-regular.otf') format('opentype');
 }
@@ -203,7 +207,7 @@ body {
 }
 
 .col {
-    width: 42%;
+    width: 40%;
     display: inline-block;
 }
 
@@ -428,14 +432,18 @@ a.nth1 {
 
 //WEBSITE START
 
-#topmenu.small {
+#s.small {
     padding-bottom: 0;
-    top: -50px;
-    height: 115px;
+    top: 0;
+    height: 62px;
     @include transition($fast);
 
+    h1 {
+        margin-top: -25px;
+    }
+
     ul {
-        margin-top: 115px;
+        margin-top: 62px;
     }
 }
 
@@ -443,7 +451,7 @@ a.nth1 {
 #topmenu {
     background: url(borderrocks2.png);
     background-size: 100% 100%;
-    background-color: #414554;
+    background-color: #EBEBEB;
     border-bottom: solid 2px black;
     margin: 0;
     padding: 20px 10%;
@@ -462,6 +470,7 @@ a.nth1 {
         font-family: existence-light;
         margin-top: 25px;
         float: left;
+        @include transition($fast);
 
         b {
             font-size: 5rem;
@@ -489,9 +498,10 @@ a.nth1 {
     ul {
         @include transition($fast);
         margin-top: 122px;
+        background-color: black;
 
         li {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             padding: 0 5px;
             color: #B5AB94;
             @include transition($faster);
@@ -521,14 +531,11 @@ a.nth1 {
 }
 
 #slide-1 .bcg {
-    background-image: url('newcastle1.jpg');
-    background-size: auto 150%;
+    background: url('newcastle2blur.jpg');
+    background-size: cover;
 }
 
-#slide-2 .bcg {
-    background-image: url('newcastle1.jpg');
-    background-size: 100% 450px;
-}
+
 
 #title {
     height: 500px;
@@ -560,6 +567,7 @@ a.nth1 {
         height: auto;
         min-height: 1024px;
         background: url(newcastle2.jpg) repeat;
+        -webkit-filter: blur(3px);
         background-size: cover;
         background-color: rgb(238, 238, 238);
         /*-webkit-filter: blur(5px);*/
@@ -603,42 +611,43 @@ a.nth1 {
 
 #about {
     text-align: left;
-    background-color: #33313C;
+    /*background:url(backtris1.png);*/
+    background-size: 250px;
+    background-color: #F6F6F6;
 
-    #bgblur {
-        margin-top: -450px;
+    #stripe {
+        background: url(origami3.jpg) no-repeat;
+        background-size: 1001px 1000px;
+        background-attachment: fixed;
         position: absolute;
-        width: 120%;
-        height: auto;
-        min-height: 1024px;
-        background-image: url(newcastle2.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        -webkit-filter: blur(4px);
-        z-index: -2;
+        width: 50%;
+        height: 100%;
+        left: 5%;
+        opacity: 0.4;
     }
 
-    .desc{
-        background-color: rgba(251, 251, 251, 0.85);
-margin: 175px 0;
-padding: 15px;
+    .desc {
+        background-color: white;
+        margin: 175px 0;
+        padding: 15px;
     }
 
     h1 {
-        color: rgb(123, 123, 123)
+        color: #515151;
     }
 
     h3 {
-        color: #8E8EBA;
+        color: #61619B;
         font-size: 1.5em;
     }
 
     p {
-        color: #cdb0b0;
+        color: #956A6A;
         font-size: 1.3em;
     }
 
     .traits-list {
+        float: right;
         vertical-align: top;
         font-size: 20px;
         color: rgb(217, 217, 217);
@@ -646,39 +655,16 @@ padding: 15px;
         li {
             position: relative;
             margin-top: 30px;
-            padding: 5px;
+            padding: 5px 0;
             margin-left: 30px;
-            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAFklEQVQYV2NkIBIwEqmOYago/E+MhwAqdgEHt7mlHwAAAABJRU5ErkJggg==);
-            background-color: rgb(35, 34, 43);
             color: rgb(137, 131, 111);
             font-weight: bold;
-            border: solid black;
-
-            &:before {
-                content: "";
-                position: absolute;
-                width: 20px;
-                height: 20px;
-                left: -20px;
-            }
-
-            &:after {
-                content: "";
-                position: absolute;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 0 20px 20px 0;
-                border-color: transparent #33313C transparent transparent;
-                top: 0;
-                right: 0px;
-            }
         }
     }
 }
 
 #experience {
-    background-color: #F8F8FA;
+    background: rgb(216, 173, 173);
 
     .text {
         max-width: 1000px;
@@ -691,6 +677,7 @@ padding: 15px;
 
         &:before {
             font-size: 35px;
+            color: rgb(84, 81, 81);
         }
     }
 
@@ -733,9 +720,13 @@ padding: 15px;
     background-color: #F5F5FB;
     height: 100%;
 
-    div {
-        max-width: 1000px;
+    > div {
+        max-width: 500px;
         margin: auto;
+    }
+
+    .width-per-48 {
+        width: 48%;
     }
 
     .skillbox {
@@ -747,12 +738,7 @@ padding: 15px;
 
     .skillbox2 {
         margin: 100px 0;
-        margin-top: 20px;
         padding: 0;
-    }
-
-    .back-gray {
-        background-color: #FCFBFC;
     }
 
     hr {
@@ -823,6 +809,7 @@ padding: 15px;
             position: relative;
             height: 25%;
             width: 100%;
+            z-index: 2;
 
             .progress {
                 width: 100%;
@@ -876,6 +863,8 @@ input[type="checkbox"]:checked ~ div {
     }
 
     .where {
+        right: 10%;
+        position: absolute;
         opacity: 1 !important;
 
         h1 {
@@ -896,6 +885,16 @@ input[type="checkbox"]:checked ~ div {
 
     h2, p {
         margin: 5px;
+    }
+
+    h2 {
+        color: rgb(206, 206, 206);
+        font-size: 1.5em;
+    }
+
+    p {
+        color: rgb(118, 118, 118);
+        font-size: 1.2rem;
     }
 
     .down {
@@ -1002,66 +1001,65 @@ input[type="checkbox"]:checked ~ div {
 }
 
 .shadow {
-    box-shadow: 0px 3px 6px 0px #323232, 0px 0px 5px 0px #A8A5A5;
+    box-shadow: 0px 3px 6px 0px #DADADA, 0px 0px 5px 0px #A7A7A7;
 }
 
 .text {
     padding: 175px 0;
 }
-/*//hoverunderlines
-  .hovunder span:before, body .mainmenu span:after {
-    width: 20px;
-    content: "";
-    height: 1px;
-    margin: auto;
-    text-align: center;
-    background: #bfc4c6;
-    position: absolute;
-    bottom: -14px; }
-  .hovunder span:before {
-    right: 50%;
-    transition: all 0.5s ease-in-out; }
-  .hovunder span:after {
-    left: 50%;
-    transition: all 0.5s ease-in-out; }
-  .hovunder a:hover span:before {
-    width: 50%;
-    transition: all 0.5s ease-in-out; }
-  .hovunder a:hover span:after {
-    width: 50%;
-    transition: all 0.5s ease-in-out; }
-  .hovunder span:before, body .contactbar span:after {
-    width: 0px;
-    content: "";
-    height: 2px;
-    margin: auto;
-    text-align: center;
-    background: #bfc4c6;
-    position: absolute;
-    bottom: -10px; }
-  .hovunder span:before {
-    right: 50%;
-    transition: all 0.5s ease-in-out; }
-  .hovunder span:after {
-    left: 50%;
-    transition: all 0.5s ease-in-out; }*/
+
 @media screen and (max-width: 1240px) {
     #profilepic4 {
         margin-left: -100px;
     }
-}
 
-@media screen and (max-width: 1020px) {
-    #topmenu li {
-        font-size: 1.2rem !important;
-        margin: 0 5px !important;
+    #slide-1 .bcg {
+        /*background: url('newcastle2blurcrop.jpg')no-repeat;*/
+        left: -20%;
     }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 1065px) {
     #topmenu li {
-        font-size: 1.2rem !important;
         margin: 0 5px !important;
+    }
+
+    #slide-1 .bcg {
+        background-size: 1040px 585px;
+    }
+
+    #skills {
+        .width-per-48 {
+            width: 80% !important;
+            float: none;
+        }
+
+        .skillbox2 {
+            margin-top: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    #slide-1 .bcg {
+        background: url('newcastle2blur.jpg');
+        background-size: 100% 150%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .colmarg {
+        display: none;
+    }
+
+    #topmenu ul {
+        position: fixed;
+        right: 5%;
+        width: 90%;
+
+        li {
+            margin: 0 5px !important;
+        }
     }
 
     #name {
@@ -1069,12 +1067,50 @@ input[type="checkbox"]:checked ~ div {
             padding-left: 0 !important;
         }
     }
+
+    input[type="checkbox"]:checked ~ div {
+        height: 650px !important;
+    }
+
+    #contact {
+        .width-250 {
+            width: 100%;
+            margin: auto;
+        }
+
+        .where {
+            right: 10%;
+            position: initial;
+        }
+    }
+}
+
+
+@media screen and (max-width: 540px) {
+    .character {
+        right: 0;
+    }
+    #topmenu ul li{
+        margin:0!important;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #returntotop {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    #returntotop {
+        bottom: 140px;
+    }
 }
 
 .triangles {
-    background: url(backtriswhite.png) repeat;
+    background: url(backtris1.png) repeat;
     position: absolute;
-    background-size: 270px;
+    background-size: 450px;
     top: 0;
     left: 0;
     width: 100%;
