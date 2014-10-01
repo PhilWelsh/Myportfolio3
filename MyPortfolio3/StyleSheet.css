@@ -398,7 +398,7 @@ a.nth1 {
   to {
     width: 0%; } }
 
-#s.small {
+#topmenu.small {
   padding-bottom: 0;
   top: 0;
   height: 62px;
@@ -406,9 +406,9 @@ a.nth1 {
   -o-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
-  #s.small h1 {
+  #topmenu.small h1 {
     margin-top: -25px; }
-  #s.small ul {
+  #topmenu.small ul {
     margin-top: 62px; }
 
 #topmenu {
@@ -558,7 +558,7 @@ a.nth1 {
   background-color: #F6F6F6; }
   #about #stripe {
     background: url(origami3.jpg) no-repeat;
-    background-size: 1001px 1000px;
+    background-size: 1001px 100%;
     background-attachment: fixed;
     position: absolute;
     width: 50%;

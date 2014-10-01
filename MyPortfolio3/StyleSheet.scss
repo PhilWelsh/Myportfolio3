@@ -432,7 +432,7 @@ a.nth1 {
 
 //WEBSITE START
 
-#s.small {
+#topmenu.small {
     padding-bottom: 0;
     top: 0;
     height: 62px;
@@ -617,7 +617,7 @@ a.nth1 {
 
     #stripe {
         background: url(origami3.jpg) no-repeat;
-        background-size: 1001px 1000px;
+        background-size: 1001px 100%;
         background-attachment: fixed;
         position: absolute;
         width: 50%;
@@ -1090,8 +1090,9 @@ input[type="checkbox"]:checked ~ div {
     .character {
         right: 0;
     }
-    #topmenu ul li{
-        margin:0!important;
+
+    #topmenu ul li {
+        margin: 0 !important;
     }
 }
 

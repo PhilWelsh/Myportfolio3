@@ -167,33 +167,18 @@
         });
     });
 
-    var buttonpressed;
+    var currentview = "#skillsnth0";
+    var lock = false;
     $("#skillbuttons a").on("click", function () {
+        if (lock) return;
+        lock = true;
         var id = $(this).attr('id');
-        $(".skill").each(function () {
-
-            $(this).fadeOut(700)
+        var skilltext = "#skills" + id;
+        $(currentview).fadeOut(700, function () {
+            $(skilltext).fadeIn();
+            currentview = skilltext;
+            lock = false;
         });
-
-        setTimeout(function () {
-            switch (id) {
-                case "nth1":
-                    $("#skillsnth1").fadeIn();
-                    break;
-                case "nth2":
-                    $("#skillsnth2").fadeIn();
-                    break;
-                case "nth3":
-                    $("#skillsnth3").fadeIn();
-                    break;
-                case "nth4":
-                    $("#skillsnth4").fadeIn();
-                    break;
-                case "nth5":
-                    $("#skillsnth5").fadeIn();
-                    break;
-            }
-        }, 700);
     });
 
 
