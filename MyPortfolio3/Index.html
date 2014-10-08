@@ -2,25 +2,50 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="font/fonts.css">
     <title></title>
 </head>
 <body>
     <div class="fullpage">
-        <div id="topmenu" class="shadow heightfull centerdiv pad-topbot-20">
-            <div class="triangles">
+        <div id="topmenu" class="shadow heightfull centerdiv">
+            <div class="overflow-hide">
+                <div class="triangles">
+                </div>
+                <div class="triangles2">
+                </div>
             </div>
             <h1><b>P</b>hil <b>W</b>elsh</h1>
-            <ul class="pos-rel floatright">
+            <ul id="nav" class="pos-rel floatright">
                 <li><a class="navbutton" data-attr-scroll="#about"><b>about</b></a></li>
                 <li><a class="navbutton" data-attr-scroll="#experience"><b>experience</b></a></li>
                 <li><a class="navbutton" data-attr-scroll="#skills"><b>skills</b></a></li>
-                <li><a class="navbutton" data-attr-scroll="#stats"><b>stats</b></a></li>
                 <li><a class="navbutton" data-attr-scroll="#contact"><b>Contact</b></a></li>
             </ul>
+            <div id="soc-med">
+                <input type="checkbox" id="soc-med-open">
+                <ul class="soc-med">
+                    <li>
+                        <a id="soc-fb" href=""></a>
+                    </li>
+                    <li>
+                        <a id="soc-tw" href=""></a>
+                    </li>
+                    <li>
+                        <a id="soc-li" href=""></a>
+                    </li>
+                    <li>
+                        <a id="soc-gh" href=""></a>
+                    </li>
+                    <li id="soc-open">
+                        <a>links</a>
+                        <label for="soc-med-open"></label>
+                    </li>
+                </ul>
+
+            </div>
         </div>
-        <div class="banner"></div>
         <section id="slide-1" class="homeSlide">
             <div class="bcg"
                  data-center="background-position: 50% -100px;"
@@ -31,11 +56,8 @@
                         <div class="hsContent"
                              data-center="opacity: 1"
                              data-106-top="opacity: 0"
-                             data-anchor-target="#slide-1 h2">
+                             data-anchor-target="#slide-1 #name">
                             <div id="name">
-                                <h1>Phil Welsh</h1>
-                                <h2>Web developer</h2>
-                                <p>Welcome to my web space</p>
                             </div>
                             <div class="overflow-hide widthfull">
                                 <div id="profilepic4"></div>
@@ -54,39 +76,86 @@
                 <div class="hsContainer">
                     <div id="about" class="textcenter bar pos-rel shadow pad-top-20 overflow-hide">
                         <div id="stripe"></div>
+                        <hr />
                         <div class="text desc col">
                             <h1>About</h1>
                             <h3>Graphic artist and web developer born and raised in Newcastle, England</h3>
-                            <p>I am constantly developing my skills and looking for full time employment as an opportunity to progress further</p>
+                            <p>Constantly developing skills and looking for full time employment as an opportunity to progress further</p>
                         </div>
-                        <div class="colmarg"></div>
                         <div class="text col right traits-list">
-                            <ul>
-                                <li>Committed</li>
-                                <li>Hardworking</li>
-                                <li>Outgoing</li>
-                                <li>Resourceful</li>
+                            <div id="stats" class="bar  shadow">
+                                <h1>Stats</h1>
 
-                            </ul>
+                                <div class="levels hideme heightfull abilities">
+                                    <div class="level">
+                                        <div class="ability">
+                                            <p>
+                                                Drawing
+                                            </p>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="filler nth1"></div>
+                                        </div>
+                                    </div>
+                                    <div class="level">
+                                        <div class="ability">
+                                            <p>
+                                                Animating
+                                            </p>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="filler nth2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="level">
+                                        <div class="ability">
+                                            <p>
+                                                Programming
+                                            </p>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="filler nth3"></div>
+                                        </div>
+                                    </div><div class="level">
+                                        <div class="ability">
+                                            <p>
+                                                Alcohol-Consumption
+                                            </p>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="filler nth4"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="heightfull abilities">
+                                    <div class="character">
+                                        <div class="lvbar">
+                                            <div class="filler">
+
+                                            </div>
+                                        </div>
+                                        <h5>Phil Welsh</h5>
+                                        <p>Lv.7</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <div id="experience" class="bar">
-            <!-- USING SIDE SWIPEY THINGS TO SHOW ONE SENTENCE AT A TIME -->
-            <div id="bg2"></div>
-            <div class="text">
+            <div class="text hideme">
                 <h1>Experience</h1>
                 <div class=" single-item">
                     <div class="first">
-                    <b>1</b>
+                        <b>1</b>
                         <p>
                             I have a long background in art. During university i studied Creative Digital Media where i learned
                             a lot about computer aided design.
                         </p>
                     </div><div class="second">
-                              <b>2</b>
+                        <b>2</b>
                         <p>
                             After graduating i travelled to Asia and spent some time teaching english, studying chinese and deciding where to go with my career.
                         </p>
@@ -97,7 +166,7 @@
                             I met several friends through networking that pointed me in the direction of web development
                         </p>
                     </div><div class="fourth">
-                              <b>4</b>
+                        <b>4</b>
                         <p>
                             and upon returning to England it
                             is now my goal to develop my skills and use them to make fantastic websites.
@@ -106,162 +175,133 @@
                 </div>
             </div>
         </div>
-            <div id="skills" class="bar shadow clearfix">
-                <div id="bg2blur"></div>
-                <div class="margin floatleft width-per-48">
-                    <div class="skillbox hideme">
-                        <input type="radio" id="radio6" name="skill" value="6" checked>
-                        <div id="skillsnth0" class="skill hide">
-                            <h1>Skills</h1>
-                            <hr />
-                            <h2>Please choose a skill from the menu to the right.</h2>
-                        </div>
-                        <!--<input type="radio" id="radio1" name="skill" value="1">-->
-                        <div id="skillsnth1" class="skill hide">
-                            <h1>Photoshop</h1>
-                            <hr />
-                            <h2>
-                                From my degree course as well as longstanding personal interest, I have learned a lot about photoshop
-                                from drawing skills and graphic design to photo-manipulation and rendering techniques.
-                                I have also used several similar programs including Adobe Illustrator
-                            </h2>
-                        </div>
-                        <!--<input type="radio" id="radio2" name="skill" value="2">-->
-                        <div id="skillsnth2" class="skill hide">
-                            <h1>HTML</h1>
-                            <hr />
-                            <h2>I am very confident with my HTML abilities. Using correct markup</h2>
-                        </div>
-                        <!--<input type="radio" id="radio3" name="skill" value="3">-->
-                        <div id="skillsnth3" class="skill hide">
-                            <h1>CSS</h1>
-                            <hr />
-                            <h2>SASS, CSS, using hacks and ways to make website more efficient</h2>
-                        </div>
-                        <!--<input type="radio" id="radio4" name="skill" value="4">-->
-                        <div id="skillsnth4" class="skill hide">
-                            <h1>Javascript/jQuery</h1>
-                            <hr />
-                            <h2>beginner js but with a good knowledge of theory, used multiple jquery plugins, understood and adapted.</h2>
-                        </div>
-                        <!--<input type="radio" id="radio5" name="skill" value="5">-->
-                        <div id="skillsnth5" class="skill hide">
-                            <h1>C#</h1>
-                            <hr />
-                            <h2>very little knowledge, but with lots of interest</h2>
-                        </div>
+        <div id="skills" class="bar shadow clearfix">
+            <div class="margin floatleft width-per-48">
+                <div class="skillbox hideme">
+                    <input type="radio" id="radio6" name="skill" value="6" checked>
+                    <div id="skillsnth0" class="skill hide">
+                        <h1>Skills</h1>
+                        <hr />
+                        <h2>Please choose a skill from the icons on the chart.</h2>
                     </div>
-                </div>
-                <div class="floatright width-per-48">
-                    <div class="skillbox2">
-                        <div id="skillbuttons" class="hideme">
-                            <img src="logo.png" class="skillbutton ps" />
-                            <a id="nth1" class="a nth1">
-                                <!--<label for="radio1"></label>-->
-                            </a><img src="logo.png" class="skillbutton html" />
-                            <a id="nth2" class="a nth2">
-
-                                <!--<label for="radio2"></label>-->
-                            </a><img src="logo.png" class="skillbutton query" />
-                            <a id="nth3" class="a nth3">
-
-                                <!--<label for="radio3"></label>-->
-                            </a><img src="logo.png" class="skillbutton js" />
-                            <a id="nth4" class="a nth4">
-
-                                <!--<label for="radio4"></label>-->
-                            </a>
-                            <img src="logo.png" class="skillbutton cs" />
-                            <a id="nth5" class="a nth5">
-
-                                <!--<label for="radio5"></label>-->
-                            </a>
-                        </div>
-                        <div class="skillchart hideme">
-                            <div class="bars nth1">
-                                <div class="pos-rel">
-                                    <div class="filler">
-                                        <div class="percent">90%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bars nth2">
-                                <div class="pos-rel">
-                                    <div class="filler"><div class="percent">95%</div></div>
-                                </div>
-                            </div>
-                            <div class="bars nth3">
-                                <div class="pos-rel">
-                                    <div class="filler"><div class="percent">90%</div></div>
-                                </div>
-                            </div>
-                            <div class="bars nth4">
-                                <div class="pos-rel">
-                                    <div class="filler"><div class="percent">45%</div></div>
-                                </div>
-                            </div>
-                            <div class="bars nth5">
-                                <div class="pos-rel">
-                                    <div class="filler"><div class="percent">15%</div></div>
-                                </div>
-                            </div>
-                        </div>
+                    <!--<input type="radio" id="radio1" name="skill" value="1">-->
+                    <div id="skillsnth1" class="skill hide">
+                        <h1>Photoshop</h1>
+                        <hr />
+                        <h2>
+                            from both personal and in-course learning, have developed skills from graphic design to photo manipulation
+                        </h2>
                     </div>
-                </div>
-        </div>
-        <div id="stats" class="bar  shadow">
-            <h1>Stats</h1>
-
-            <div class="levels hideme heightfull abilities">
-                <div class="level">
-                    <div class="ability">
-                        <p>
-                            Drawing
-                        </p>
+                    <!--<input type="radio" id="radio2" name="skill" value="2">-->
+                    <div id="skillsnth2" class="skill hide">
+                        <h1>HTML</h1>
+                        <hr />
+                        <h2>Confident HTML abilities. Using semantic markup and a clean easily modifiable framework</h2>
                     </div>
-                    <div class="progress">
-                        <div class="filler nth1"></div>
+                    <!--<input type="radio" id="radio3" name="skill" value="3">-->
+                    <div id="skillsnth3" class="skill hide">
+                        <h1>CSS</h1>
+                        <hr />
+                        <h2>
+                            good knowledge of Sass and CSS, using clean, semantic and efficient layout
+                            using hacks to avoid Js when possible.
+                        </h2>
                     </div>
-                </div>
-                <div class="level">
-                    <div class="ability">
-                        <p>
-                            Animating
-                        </p>
+                    <!--<input type="radio" id="radio4" name="skill" value="4">-->
+                    <div id="skillsnth4" class="skill hide">
+                        <h1>JS/jQuery</h1>
+                        <hr />
+                        <h2>
+                            Beginner knowledge of javascript, able to program simple things and use pre-existing APIs.
+                            Usually using Jquery to reach goals.
+                        </h2>
                     </div>
-                    <div class="progress">
-                        <div class="filler nth2"></div>
-                    </div>
-                </div>
-                <div class="level">
-                    <div class="ability">
-                        <p>
-                            Programming
-                        </p>
-                    </div>
-                    <div class="progress">
-                        <div class="filler nth3"></div>
-                    </div>
-                </div><div class="level">
-                    <div class="ability">
-                        <p>
-                            Alcohol-Consumption
-                        </p>
-                    </div>
-                    <div class="progress">
-                        <div class="filler nth4"></div>
+                    <!--<input type="radio" id="radio5" name="skill" value="5">-->
+                    <div id="skillsnth5" class="skill hide">
+                        <h1>C#</h1>
+                        <hr />
+                        <h2>
+                            An extremely beginner knowledge, but with many hours of basic theory and practice, and an
+                            interest to delve deeper.
+                        </h2>
                     </div>
                 </div>
             </div>
-            <div class="heightfull abilities">
-                <div class="character">
-                    <div class="lvbar">
-                        <div class="filler">
+            <div class="floatright width-per-48">
+                <div class="skillbox2">
+                    <div id="skillbuttons" class="hideme">
+                        <img src="img/logo.png" class="skillbutton ps" />
+                        <a id="nth1" class="a nth1">
+                            <!--<label for="radio1"></label>
 
+                                                            WANT AN EMPTY IMG... NOT LOGO.PNG
+
+
+                            -->
+                        </a><img src="img/logo.png" class="skillbutton html" />
+                        <a id="nth2" class="a nth2">
+
+                            <!--<label for="radio2"></label>-->
+                        </a><img src="img/logo.png" class="skillbutton query" />
+                        <a id="nth3" class="a nth3">
+
+                            <!--<label for="radio3"></label>-->
+                        </a><img src="img/logo.png" class="skillbutton js" />
+                        <a id="nth4" class="a nth4">
+
+                            <!--<label for="radio4"></label>-->
+                        </a>
+                        <img src="img/logo.png" class="skillbutton cs" />
+                        <a id="nth5" class="a nth5">
+
+                            <!--<label for="radio5"></label>-->
+                        </a>
+                    </div>
+                    <div class="skillchart hideme">
+                        <div class="bars nth1">
+                            <div class="pos-rel">
+                                <div class="filler">
+                                    <div class="percent">90%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bars nth2">
+                            <div class="pos-rel">
+                                <div class="filler"><div class="percent">95%</div></div>
+                            </div>
+                        </div>
+                        <div class="bars nth3">
+                            <div class="pos-rel">
+                                <div class="filler"><div class="percent">90%</div></div>
+                            </div>
+                        </div>
+                        <div class="bars nth4">
+                            <div class="pos-rel">
+                                <div class="filler"><div class="percent">45%</div></div>
+                            </div>
+                        </div>
+                        <div class="bars nth5">
+                            <div class="pos-rel">
+                                <div class="filler"><div class="percent">15%</div></div>
+                            </div>
                         </div>
                     </div>
-                    <h5>Phil Welsh</h5>
-                    <p>Lv.7</p>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio" class="bar centerdiv">
+            <div class="portsub hideme">
+                <div class="siteicon">
+                    <a href="philwelsh.com"></a>
+                    <img src="img/sketchlogoPW.png" />
+                </div>
+                <div class="siteicon">
+                    <a href="philwelsh.com/cardboardsword"></a>
+                    <img class="cbs" src="img/sketchlogoCS.png" />
+                </div>
+                <div class="siteicon">
+                    <a href="andrewdavidrobson.com"></a>
+                    <img src="img/sketchlogo2ADR.png" />
                 </div>
             </div>
         </div>
@@ -283,18 +323,15 @@
                     <p>uk.linkedin.com/in/welshphil</p>
                 </div>
             </div>
-            <div class="colmarg"></div>
             <div class="col text where">
                 <h1>Where i am</h1>
                 <div id="map-canvas"></div>
             </div>
         </div>
     </div>
-    <div id="returntotop">
-        <div id="up"></div>
-    </div>
+
     <div id="footer" class="height-50 back-black">
-        <h3 class="floatleft"><i>©</i>2014 Phil Welsh</h3>
+        <h3 class="floatleft"><i>©</i>2014PhilWelsh</h3>
         <ul>
             <li>
                 <a href="uk.linkedin.com/in/welshphil">LinkedIn</a>
@@ -304,6 +341,9 @@
             </li>
 
         </ul>
+    </div>
+    <div id="returntotop">
+        <div id="up"></div>
     </div>
     <script type="text/javascript" src="jQuery-2.1.1.js"></script>
     <script src="skrollr.js"></script>

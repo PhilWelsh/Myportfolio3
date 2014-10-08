@@ -149,7 +149,7 @@
             /* If the object is completely visible in the window, fade it in */
             if (bottom_of_window > top_of_object) {
 
-                $(this).delay(200).animate({ 'opacity': '1' }, 500);
+                $(this).delay(200).animate({ 'opacity': '1' }, 800);
                 $(this).find(".nth1 .filler").delay(400).animate({ 'height': '100%' }, 1300);
                 $(this).find(".nth2 .filler").delay(500).animate({ 'height': '100%' }, 1350);
                 $(this).find(".nth3 .filler").delay(600).animate({ 'height': '100%' }, 1400);
@@ -166,6 +166,8 @@
 
         });
     });
+
+    //Skill buttons
 
     var currentview = "#skillsnth0";
     var lock = false;

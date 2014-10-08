@@ -1,61 +1,54 @@
-﻿//BREAKS ON 400PX WIDTH
-
-
+﻿//BREAKS ON 340PX /420 WIDTH
 
 @font-face {
-    font-family: korriban-regular;
-    src: url('fonts/korriban-regular.otf') format('opentype');
+    font-family: 'robotoblack';
+    src: url('roboto-black-webfont.eot');
+    src: url('roboto-black-webfont.eot?#iefix') format('embedded-opentype'), url('roboto-black-webfont.woff2') format('woff2'), url('roboto-black-webfont.woff') format('woff'), url('roboto-black-webfont.ttf') format('truetype'), url('roboto-black-webfont.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: ptarmi__;
-    src: url('fonts/ptarmi__.ttf') format('truetype');
+    font-family: 'ralewayregular';
+    src: url('raleway-regular-webfont.eot');
+    src: url('raleway-regular-webfont.eot?#iefix') format('embedded-opentype'), url('raleway-regular-webfont.woff2') format('woff2'), url('raleway-regular-webfont.woff') format('woff'), url('raleway-regular-webfont.ttf') format('truetype'), url('raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: sensation_light;
-    src: url('fonts/sensation_light.woff') format('woff');
+    font-family: 'kg_broken_vessels_sketchRg';
+    src: url('kgbokenvesselssketch-webfont.eot');
+    src: url('kgbokenvesselssketch-webfont.eot?#iefix') format('embedded-opentype'), url('kgbokenvesselssketch-webfont.woff2') format('woff2'), url('kgbokenvesselssketch-webfont.woff') format('woff'), url('kgbokenvesselssketch-webfont.ttf') format('truetype'), url('kgbokenvesselssketch-webfont.svg#kg_broken_vessels_sketchRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: Barbaric;
-    src: url('fonts/Barbaric.ttf') format('truetype');
+    font-family: 'project_xregular';
+    src: url('projectx-webfont.eot');
+    src: url('projectx-webfont.eot?#iefix') format('embedded-opentype'), url('projectx-webfont.woff2') format('woff2'), url('projectx-webfont.woff') format('woff'), url('projectx-webfont.ttf') format('truetype'), url('projectx-webfont.svg#project_xregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: Barbaric;
-    src: url('fonts/Barbaric.ttf') format('truetype');
+    font-family: 'harabara_maisharabaramaisdemo';
+    src: url('harabaramaisdemo-webfont.eot');
+    src: url('harabaramaisdemo-webfont.eot?#iefix') format('embedded-opentype'), url('harabaramaisdemo-webfont.woff2') format('woff2'), url('harabaramaisdemo-webfont.woff') format('woff'), url('harabaramaisdemo-webfont.ttf') format('truetype'), url('harabaramaisdemo-webfont.svg#harabara_maisharabaramaisdemo') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: HarabaraMaisDemo;
-    src: url('fonts/HarabaraMaisDemo.otf') format('opentype');
+    font-family: 'ptarmiganitalic';
+    src: url('ptarmi__-webfont.eot');
+    src: url('ptarmi__-webfont.eot?#iefix') format('embedded-opentype'), url('ptarmi__-webfont.woff2') format('woff2'), url('ptarmi__-webfont.woff') format('woff'), url('ptarmi__-webfont.ttf') format('truetype'), url('ptarmi__-webfont.svg#ptarmiganitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-@font-face {
-    font-family: Akaju_demo;
-    src: url('fonts/Akaju_demo.otf') format('opentype');
-}
 
-@font-face {
-    font-family: Chunkfive;
-    src: url('fonts/Chunkfive.otf') format('opentype');
-}
-
-@font-face {
-    font-family: cabin-bold;
-    src: url('fonts/cabin-bold.otf') format('opentype');
-}
-
-@font-face {
-    font-family: raleway-regular;
-    src: url('fonts/raleway-regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: existence-light;
-    src: url('fonts/existence-light.otf') format('opentype');
-}
 
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -106,12 +99,205 @@
     animation-duration: $time;
 }
 
+/*@-moz-keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 200% -150%;
+    }
+}
+
+@-webkit-keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 200% -150%;
+    }
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 200% -150%;
+    }
+}
+
+
+@-moz-keyframes animatedBackground2 {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 200% -210%;
+    }
+}
+
+@-webkit-keyframes animatedBackground2 {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 200% -210%;
+    }
+}
+
+@keyframes animatedBackground2 {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 200% -210%;
+    }
+}*/
+
+@-moz-keyframes animatedBackground {
+    from {
+        background-position: 200px 80px;
+    }
+
+    to {
+        background-position: 1600px 1500px;
+    }
+}
+
+@-webkit-keyframes animatedBackground {
+    from {
+        background-position: 200px 80px;
+    }
+
+    to {
+        background-position: 1600px 1500px;
+    }
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 200px 80px;
+    }
+
+    to {
+        background-position: 1600px 1500px;
+    }
+}
+
+
+@-moz-keyframes animatedBackground2 {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 1400px 620px;
+    }
+}
+
+@-webkit-keyframes animatedBackground2 {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 1400px 620px;
+    }
+}
+
+@keyframes animatedBackground2 {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 1400px 620px;
+    }
+}
+
 //IMPORTS
 
 /*@import "HeightStyleSheet";*/
-@import "OperandsStyleSheet";
+/*@import "OperandsStyleSheet";*/
 /*@import "DecorStyleSheet";
 @import "FontsStyleSheet";*/
+
+.overflow-hide {
+    overflow: hidden;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
+.pos-fix {
+    position: fixed;
+}
+
+.floatleft {
+    float: left;
+}
+
+.floatright {
+    float: right;
+}
+
+.margin {
+    margin: auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.centerdiv {
+    width: auto;
+    text-align: center;
+
+    ul {
+        width: auto;
+        padding: 0;
+        margin: auto;
+        line-height: 1.4;
+
+        li {
+            display: inline;
+            text-align: center;
+        }
+    }
+}
+
+@mixin rotate($degrees) {
+    -webkit-transform: rotate($degrees);
+    -moz-transform: rotate($degrees);
+    -ms-transform: rotate($degrees);
+    -o-transform: rotate($degrees);
+    transform: rotate($degrees);
+}
 
 //MIXINS
 $full: 100%;
@@ -158,7 +344,7 @@ body {
     position: relative;
     background-color: black;
     //fonts
-    font-family: "HarabaraMaisDemo";
+    font-family: "harabara_maisharabaramaisdemo";
 
     ul {
         padding: 0;
@@ -167,7 +353,7 @@ body {
 
     li {
         list-style: none;
-        font-family: raleway-regular;
+        font-family: ralewayregular;
         text-transform: capitalize;
     }
     /*h1, h2, h3, h4, h5, p {
@@ -194,7 +380,7 @@ body {
         text-decoration: none;
         color: inherit;
         cursor: pointer;
-        @includ transition($faster);
+        @include transition($faster);
     }
 }
 //div{border-bottom:1px solid black;}
@@ -203,7 +389,6 @@ body {
 .fullpage {
     margin: 0;
     overflow: hidden;
-    border: 3px solid gray;
 }
 
 .col {
@@ -223,33 +408,34 @@ body {
 
 .skillbutton {
     width: 13%;
-    margin-left: 4%;
+    margin-left: 5%;
     height: 100%;
     background-color: white;
     display: inline-block;
 
     &.ps {
-        background: url(ps.png) no-repeat;
+        background: url(img/ps.png) no-repeat;
         background-size: 100%;
+        margin-left: 1%;
     }
 
     &.html {
-        background: url(html5.png) no-repeat;
+        background: url(img/html5.png) no-repeat;
         background-size: 100%;
     }
 
     &.query {
-        background: url(css.png) no-repeat;
+        background: url(img/css.png) no-repeat;
         background-size: 100%;
     }
 
     &.js {
-        background: url(query.png) no-repeat;
+        background: url(img/query.png) no-repeat;
         background-size: 100%;
     }
 
     &.cs {
-        background: url(cs.png) no-repeat;
+        background: url(img/cs.png) no-repeat;
         background-size: 100%;
     }
 }
@@ -284,31 +470,6 @@ input[type="radio"] {
 
 input[type="radio"]:checked + div {
     display: block;
-}
-
-
-a.nth1 {
-    margin-left: 4%;
-}
-
-.nth1 {
-    left: 0;
-}
-
-.nth2 {
-    left: 21%;
-}
-
-.nth3 {
-    left: 39%;
-}
-
-.nth4 {
-    left: 57%;
-}
-
-.nth5 {
-    left: 75%;
 }
 
 .hideme {
@@ -399,37 +560,6 @@ a.nth1 {
     }
 }
 
-
-@-webkit-keyframes topReveal {
-    from {
-        width: 100%;
-    }
-
-    to {
-        width: 0%;
-    }
-}
-
-@-moz-keyframes topReveal {
-    from {
-        width: 100%;
-    }
-
-    to {
-        width: 0%;
-    }
-}
-
-@keyframes topReveal {
-    from {
-        width: 100%;
-    }
-
-    to {
-        width: 0%;
-    }
-}
-
 //WEBSITE START
 
 #topmenu.small {
@@ -439,20 +569,18 @@ a.nth1 {
     @include transition($fast);
 
     h1 {
-        margin-top: -25px;
+        margin-top: -20px;
     }
 
-    ul {
+    ul#nav {
         margin-top: 62px;
     }
 }
 
-
 #topmenu {
-    background: url(borderrocks2.png);
+    background: url(img/borderrocks2.png);
     background-size: 100% 100%;
     background-color: #EBEBEB;
-    border-bottom: solid 2px black;
     margin: 0;
     padding: 20px 10%;
     position: fixed;
@@ -464,59 +592,264 @@ a.nth1 {
     @include transition($fast);
     border-bottom: 30px solid black;
 
-    h1 {
-        position: absolute;
-        color: white;
-        font-family: existence-light;
-        margin-top: 25px;
-        float: left;
-        @include transition($fast);
-
-        b {
-            font-size: 5rem;
-        }
-    }
-    /*.coverer {
+    .overflow-hide {
+        width: 100%;
+        height: 100%;
         position: absolute;
         top: 0;
-        right: -10px;
-        width: 100%;
-        z-index: 2;
-        background-color: inherit;
-        border-left: 10px solid white;
-        height: 100%;
-        @include animation(topReveal);
-        -o-animation-fill-mode: forwards;
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-        @include animation-duration(2s);
-        -moz-animation-timing-function: linear;
-        -o-animation-timing-function: linear;
-        -webkit-animation-timing-function: linear;
-        animation-timing-function: linear;
-    }*/
-    ul {
+        left: 0;
+        overflow: hidden;
+
+        .triangles, .triangles2 {
+            width: 150%;
+            height: 100%;
+            background-repeat: repeat;
+        }
+
+        .triangles {
+            opacity: 0.2;
+            background: url(img/backtris1.png);
+            background-position: 0px 0px;
+            -webkit-animation: animatedBackground 120s linear infinite;
+            -moz-animation: animatedBackground 120s linear infinite;
+            -o-animation: animatedBackground 120s linear infinite;
+            animation: animatedBackground 120s linear infinite;
+        }
+
+        .triangles2 {
+            background: url(img/backtriswhite.png);
+            background-position: 200px 80px;
+            -webkit-animation: animatedBackground2 80s linear infinite;
+            -moz-animation: animatedBackground2 80s linear infinite;
+            -o-animation: animatedBackground2 80s linear infinite;
+            animation: animatedBackground2 80s linear infinite;
+        }
+    }
+
+    h1 {
+        position: absolute;
+        color: #d4d4d4;
+        font-family: project_xregular;
+        margin-top: 38px;
+        float: left;
+        @include transition($fast);
+        font-size: 4rem;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        z-index: 3;
+
+        b {
+            font-size: 6.5rem;
+        }
+    }
+
+    h2 {
+        position: absolute;
+        color: #242424;
+        color: #BA9090;
+        font-family: kg_broken_vessels_sketchRg;
+        margin-left: 50%;
+        bottom: -25px;
+        @include transition(all 0.5s ease-in-out);
+        font-size: 2rem;
+        text-shadow: 3px 4px 0 #000, 4px 4px 0 #000, -1px -1px 0 #000, 4px 1px 1px #000;
+        z-index: 3;
+    }
+
+    ul#nav {
         @include transition($fast);
         margin-top: 122px;
-        background-color: black;
+        background-color: transparent;
+        z-index: 9;
+
 
         li {
             font-size: 1.2rem;
             padding: 0 5px;
             color: #B5AB94;
             @include transition($faster);
-            /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+
+            b {
+                text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            }
+
             &:hover {
                 background-color: #f66a06;
                 color: rgb(51, 55, 69);
+
+                b {
+                    text-shadow: none;
+                }
             }
         }
     }
 
-    a {
-        margin: 0;
+    input[type="checkbox"]#soc-med-open:checked ~ ul {
+        bottom: 15px;
+
+        #soc-open {
+            background-color: rgb(230, 225, 210);
+            color: black;
+        }
+    }
+
+    #soc-med {
+        position: absolute;
+        width: 70px;
+        height: 330px;
+        right: 5%;
+        bottom: -360px;
+        overflow: hidden;
+        @include transition($fast);
+        font-weight: bold;
+
+        a, p {
+            position: absolute;
+            width: 100%;
+            height: 30px;
+            left: 0;
+        }
+
+
+
+        ul.soc-med {
+            position: absolute;
+            width: 100%;
+            bottom: 299px;
+            margin: 0;
+            @include transition($fast);
+                    -moz-transition-delay: .5s;
+        -o-transition-delay: .5s;
+        -webkit-transition-delay: .5s;
+        transition-delay: .5s;
+            li {
+                display: block;
+                height: 70px;
+                width: 100%;
+                margin-top: 1px;
+                background-color: rgb(23, 23, 23);
+                /*> a {
+                    height: 70px;
+                    width: 100%;
+                    height: 60px;
+                    width: 85%;
+                    background-color: white;
+                    border-radius: 100px;
+                    left: 8%;
+                    margin-top: 5px;
+                }*/
+                > a {
+                    height: 55px;
+                    width: 78%;
+                    /* background-color: rgb(233, 233, 233); */
+                    border: 2px solid white;
+                    border-radius: 100px;
+                    left: 9%;
+                    margin-top: 5px;
+                    border: 2px solid rgba(55, 55, 55, 0.29);
+
+                    &:hover {
+                        box-shadow: 0px 0px 9px #FFFFFF;
+                    }
+                }
+
+                #soc-fb:after,
+                #soc-tw:after,
+                #soc-li:after,
+                #soc-gh:after {
+                    content: "";
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    background-size: 100%;
+                }
+
+                #soc-fb {
+                    &:after {
+                        background: url(img/fb.png);
+                        background-size: 100%;
+                    }
+
+                    &:hover {
+                        background-color: #3b5998;
+                    }
+                }
+
+                #soc-tw {
+                    &:after {
+                        background: url(img/twit.png);
+                        background-size: 100%;
+                    }
+
+                    &:hover {
+                        background-color: #00aced;
+                    }
+                }
+
+                #soc-li {
+                    &:after {
+                        background: url(img/li.png);
+                        background-size: 100%;
+                    }
+
+                    &:hover {
+                        background-color: #007bb6;
+                    }
+                }
+
+                #soc-gh {
+                    &:after {
+                        background: url(img/gh.png);
+                        background-size: 100%;
+                    }
+
+                    &:hover {
+                        background-color: rgb(0, 0, 0);
+                    }
+                }
+            }
+
+            li#soc-open {
+                height: 30px;
+                border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                background-color: black;
+                color: white;
+                @include transition($fast);
+
+                > a, label {
+                    background-color: transparent;
+                    height: 30px;
+                    width: inherit;
+                    left: 0;
+                    border: none;
+                    position: absolute;
+                    margin: 0;
+                    cursor: pointer;
+                    line-height: 30px;
+                }
+            }
+
+            &:hover {
+                bottom: 15px;
+            }
+
+            &:after {
+                content: "";
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                bottom: -20px;
+                right: 40px;
+                background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiP…0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+            }
+        }
     }
 }
+
+a {
+    margin: 0;
+}
+
 
 .bar {
     /*height: 100%;*/
@@ -531,7 +864,7 @@ a.nth1 {
 }
 
 #slide-1 .bcg {
-    background: url('newcastle2blur.jpg');
+    background: url(img/newcastle2blur.jpg);
     background-size: cover;
 }
 
@@ -540,7 +873,7 @@ a.nth1 {
 #title {
     height: 500px;
     margin-top: 160px;
-    font-family: ptarmi__;
+    font-family: ptarmiganitalic;
     /*border-top: 5px solid #141728;
     border-bottom: 5px solid #141728;*/
     overflow: hidden;
@@ -566,7 +899,7 @@ a.nth1 {
         width: 120%;
         height: auto;
         min-height: 1024px;
-        background: url(newcastle2.jpg) repeat;
+        background: url(img/newcastle2.jpg) repeat;
         -webkit-filter: blur(3px);
         background-size: cover;
         background-color: rgb(238, 238, 238);
@@ -602,7 +935,7 @@ a.nth1 {
     }
 
     #profilepic4 {
-        background: url(mex.png) no-repeat;
+        background: url(img/mex.png) no-repeat;
         background-size: 350px;
         right: -150px;
         bottom: 0;
@@ -611,12 +944,12 @@ a.nth1 {
 
 #about {
     text-align: left;
-    /*background:url(backtris1.png);*/
+    /*background:url(img/backtris1.png);*/
     background-size: 250px;
     background-color: #F6F6F6;
 
     #stripe {
-        background: url(origami3.jpg) no-repeat;
+        background: url(img/origami3.jpg) no-repeat;
         background-size: 1001px 100%;
         background-attachment: fixed;
         position: absolute;
@@ -624,6 +957,10 @@ a.nth1 {
         height: 100%;
         left: 5%;
         opacity: 0.4;
+    }
+
+    hr {
+        display: none;
     }
 
     .desc {
@@ -661,10 +998,116 @@ a.nth1 {
             font-weight: bold;
         }
     }
+
+    #stats {
+        padding: 20px 10%;
+        height: 100%;
+        background-color: #F8F8F8;
+        position: relative;
+        font-size: 16px;
+        color: #000000;
+
+
+
+        .abilities {
+            width: 200px;
+            display: inline-block;
+
+            p {
+                color: black;
+            }
+
+            .character {
+                position: absolute;
+                background: url(img/avatar.png) no-repeat;
+                background-size: 100%;
+                height: 230px;
+                width: 200px;
+                top: 0;
+                right: 10%;
+                margin-top: 50px;
+                margin-left: 50px;
+
+                p, h5, .lvbar {
+                    position: absolute;
+                    font-size: 1rem;
+                    text-align: center;
+                    width: 100%;
+                    margin: 0;
+                }
+
+
+                .lvbar {
+                    width: 70%;
+                    bottom: -30px;
+                    height: 15px;
+                    margin-left: 15%;
+                    border: solid;
+
+                    .filler {
+                        position: absolute;
+                        width: 10%;
+                        height: 100%;
+                        left: 0;
+                        background-color: rgb(154, 153, 183);
+                    }
+                }
+
+                h5 {
+                    bottom: -50px;
+                }
+
+                p {
+                    bottom: -70px;
+                }
+            }
+
+            .level {
+                position: relative;
+                height: 25%;
+                width: 100%;
+                z-index: 2;
+
+                .progress {
+                    width: 100%;
+                    height: 15%;
+                    position: absolute;
+                    bottom: 20%;
+                    background-color: #F8F8F8;
+                    border: 2px solid black;
+
+                    .filler {
+                        position: absolute;
+                        width: 0%;
+                        height: 100%;
+                        left: 0;
+                        background-color: gray;
+
+                        &.nth1 {
+                            width: 60%;
+                        }
+
+                        &.nth2 {
+                            width: 35%;
+                        }
+
+                        &.nth3 {
+                            width: 20%;
+                        }
+
+                        &.nth4 {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 #experience {
-    background: rgb(216, 173, 173);
+    //background: rgb(216, 173, 173);
+    background: #ADB2D8;
 
     .text {
         max-width: 1000px;
@@ -711,7 +1154,7 @@ a.nth1 {
             border-width: 35px 35px 0 0;
             border-color: #414554 transparent transparent transparent;
             top: 24px;
-            left: 0px;
+            left: 0;
         }
     }
 }
@@ -719,6 +1162,7 @@ a.nth1 {
 #skills {
     background-color: #F5F5FB;
     height: 100%;
+    font-family: robotoblack;
 
     > div {
         max-width: 500px;
@@ -734,6 +1178,12 @@ a.nth1 {
         margin-bottom: 0;
         padding: 30px;
         border-radius: 5px;
+        color: #44396D;
+
+        h1 {
+            color: rgb(255, 255, 255);
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
     }
 
     .skillbox2 {
@@ -746,112 +1196,40 @@ a.nth1 {
         background-color: black;
         border-color: transparent;
     }
-}
-
-#stats {
-    padding: 100px 10%;
-    height: 100%;
-    background-color: #F8F8F8;
-    position: relative;
 
 
+    a.nth1 {
+        margin-left: 4%;
+    }
 
+    .nth1 {
+        left: 0;
+    }
 
-    .abilities {
-        width: 200px;
-        display: inline-block;
+    .nth2 {
+        left: 21%;
+    }
 
+    .nth3 {
+        left: 39%;
+    }
 
-        .character {
-            background: url(avatar.png) no-repeat;
-            background-size: 100%;
-            height: 230px;
-            position: absolute;
-            width: 200px;
-            top: 0;
-            margin-top: 100px;
-            margin-left: 50px;
+    .nth4 {
+        left: 57%;
+    }
 
-            p, h5, .lvbar {
-                position: absolute;
-                font-size: 1rem;
-                text-align: center;
-                width: 100%;
-                margin: 0;
-            }
-
-            .lvbar {
-                width: 70%;
-                bottom: -30px;
-                height: 15px;
-                margin-left: 15%;
-                border: solid;
-
-                .filler {
-                    position: absolute;
-                    width: 10%;
-                    height: 100%;
-                    left: 0;
-                    background-color: rgb(154, 153, 183);
-                }
-            }
-
-            h5 {
-                bottom: -50px;
-            }
-
-            p {
-                bottom: -70px;
-            }
-        }
-
-        .level {
-            position: relative;
-            height: 25%;
-            width: 100%;
-            z-index: 2;
-
-            .progress {
-                width: 100%;
-                height: 15%;
-                position: absolute;
-                bottom: 20%;
-                background-color: #F8F8F8;
-                border: 2px solid black;
-
-                .filler {
-                    position: absolute;
-                    width: 0%;
-                    height: 100%;
-                    left: 0;
-                    background-color: gray;
-
-                    &.nth1 {
-                        width: 60%;
-                    }
-
-                    &.nth2 {
-                        width: 35%;
-                    }
-
-                    &.nth3 {
-                        width: 20%;
-                    }
-
-                    &.nth4 {
-                        width: 80%;
-                    }
-                }
-            }
-        }
+    .nth5 {
+        left: 75%;
     }
 }
 
-input[type="checkbox"] {
+
+
+input[type="checkbox"]#contactopen {
     display: none;
 }
 
-input[type="checkbox"]:checked ~ div {
+input[type="checkbox"]#contactopen:checked ~ div {
     height: 350px !important;
 
     .down {
@@ -869,6 +1247,40 @@ input[type="checkbox"]:checked ~ div {
 
         h1 {
             width: 270px;
+        }
+    }
+}
+
+#portfolio {
+    background-color: #3d3d3d;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+
+    .siteicon {
+        display: inline-block;
+        position: relative;
+
+        a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.29);
+            }
+        }
+
+        img {
+            height: 150px;
+            width: 150px;
+            margin: 0 20px;
+            padding: 30px 0;
+            vertical-align: middle;
+        }
+
+        img.cbs {
+            height: 90px;
+            width: 320px;
         }
     }
 }
@@ -963,7 +1375,7 @@ input[type="checkbox"]:checked ~ div {
 }
 
 #footer {
-    @include background-linear-gradient(#212121, #373737);
+    background: rgb(187, 187, 187);
     color: white;
     font-size: 1.1rem;
     height: 50px;
@@ -974,7 +1386,7 @@ input[type="checkbox"]:checked ~ div {
         cursor: default;
         text-shadow: 0px 3px 3px rgba(150, 150, 150, 0.9);
         margin: 0;
-        margin-top: 1em;
+        margin-top: .7em;
 
         i {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -1008,7 +1420,61 @@ input[type="checkbox"]:checked ~ div {
     padding: 175px 0;
 }
 
+@media screen and (max-width: 1500px) {
+    #about {
+
+        .col {
+            width: 50%;
+        }
+
+        #stripe {
+            width: 40%;
+        }
+
+        .desc {
+            width: 35%;
+        }
+
+        #profilepic4 {
+            margin-left: -100px;
+        }
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    #slide-1 .bcg {
+        background: url(img/newcastle2blur.jpg);
+        background-size: 100% 150%;
+    }
+}
+
 @media screen and (max-width: 1240px) {
+    //switch the character box to underneath with a line ontop
+    #about {
+        #stripe {
+            width: 70%;
+            height: 647px;
+        }
+
+        hr {
+            top: 638px;
+            position: absolute;
+            width: 1250px;
+            left: 0;
+            display: block;
+        }
+
+
+        .desc {
+            width: 70%;
+        }
+
+        .traits-list {
+            width: 600px;
+            float: none;
+        }
+    }
+
     #profilepic4 {
         margin-left: -100px;
     }
@@ -1020,8 +1486,12 @@ input[type="checkbox"]:checked ~ div {
 }
 
 @media screen and (max-width: 1065px) {
-    #topmenu li {
-        margin: 0 5px !important;
+
+
+    #topmenu #ul {
+        li {
+            margin: 0 5px !important;
+        }
     }
 
     #slide-1 .bcg {
@@ -1030,7 +1500,7 @@ input[type="checkbox"]:checked ~ div {
 
     #skills {
         .width-per-48 {
-            width: 80% !important;
+            width: 80%;
             float: none;
         }
 
@@ -1040,10 +1510,27 @@ input[type="checkbox"]:checked ~ div {
     }
 }
 
-@media screen and (min-width: 1500px) {
-    #slide-1 .bcg {
-        background: url('newcastle2blur.jpg');
-        background-size: 100% 150%;
+@media screen and (max-width: 840px) {
+    #topmenu {
+        h1 {
+            margin-top: 10px;
+
+            b {
+            }
+        }
+
+
+
+        &.small h1 {
+            margin-top: -50px;
+        }
+
+        ul#nav {
+
+            li {
+                margin: 0 5px !important;
+            }
+        }
     }
 }
 
@@ -1052,13 +1539,11 @@ input[type="checkbox"]:checked ~ div {
         display: none;
     }
 
-    #topmenu ul {
-        position: fixed;
-        right: 5%;
-        width: 90%;
-
-        li {
-            margin: 0 5px !important;
+    #topmenu {
+        h2 {
+            margin-left: 285px;
+            bottom: -17px;
+            font-size: 1.4rem;
         }
     }
 
@@ -1068,8 +1553,16 @@ input[type="checkbox"]:checked ~ div {
         }
     }
 
-    input[type="checkbox"]:checked ~ div {
+    input[type="checkbox"]#contactopen:checked ~ div {
         height: 650px !important;
+    }
+
+    #about .traits-list {
+        width: 470px;
+
+        #stats {
+            padding: 20px 5%;
+        }
     }
 
     #contact {
@@ -1079,7 +1572,7 @@ input[type="checkbox"]:checked ~ div {
         }
 
         .where {
-            right: 10%;
+            left: 10%;
             position: initial;
         }
     }
@@ -1087,12 +1580,29 @@ input[type="checkbox"]:checked ~ div {
 
 
 @media screen and (max-width: 540px) {
-    .character {
-        right: 0;
+
+    #about {
+        #stripe, .desc {
+            width: 90%;
+        }
+
+        .character {
+            right: 0;
+        }
+
+        .traits-list {
+            margin-left: -10%;
+        }
     }
 
-    #topmenu ul li {
-        margin: 0 !important;
+    #topmenu ul#nav {
+        position: fixed;
+        right: 5%;
+        width: 90%;
+
+        li {
+            margin: 0 !important;
+        }
     }
 }
 
@@ -1100,121 +1610,51 @@ input[type="checkbox"]:checked ~ div {
     #returntotop {
         right: 0;
     }
+
+    #skills {
+        .width-per-48 {
+            width: 100%;
+        }
+
+        .skillbox {
+            padding: 0;
+        }
+    }
+
+    #footer {
+        padding: 0;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 340px) {
+    #topmenu {
+        h1 {
+            margin-top: 35px;
+            font-size: 4rem;
+
+            b {
+                font-size: 5rem;
+            }
+        }
+
+        &.small h1 {
+            margin-top: -25px;
+        }
+    }
+
     #returntotop {
         bottom: 140px;
     }
 }
 
 .triangles {
-    background: url(backtris1.png) repeat;
+    background: url(img/backtris1.png) repeat;
     position: absolute;
     background-size: 450px;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.3;
-}
-
-.triangles {
-    .triangle1 {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 43px 86px 41px 167px;
-        border-color: gray transparent transparent transparent;
-        left: 10%;
-    }
-
-    .triangle2 {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 40.5px 138.25px 40.5px 0;
-        border-color: transparent gray transparent transparent;
-        left: 13%;
-        top: -20px;
-        @include rotate(-55deg);
-    }
-
-    .triangle3 {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 78.25px 59.125px 0 171px;
-        border-color: gray transparent transparent transparent;
-        right: 0;
-    }
-
-    .triangle4 {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 21px 31px 254px;
-        border-color: transparent transparent gray transparent;
-        top: -10px;
-        left: -10%;
-        -webkit-transform: rotate(-10deg);
-        -moz-transform: rotate(-10deg);
-        -ms-transform: rotate(-10deg);
-        -o-transform: rotate(-10deg);
-        transform: rotate(-9deg);
-    }
-
-    .triangle5 {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 56.25px 41.125px 0 175px;
-        left: 30%;
-        border-color: gray transparent transparent transparent;
-    }
-
-    .triangle6 {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 27.25px 129.125px 0 171px;
-        left: 47%;
-        border-color: gray transparent transparent transparent;
-    }
-
-    .triangle7 {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 48.25px 36.125px 0 110px;
-        border-color: gray transparent transparent transparent;
-        left: 70%;
-    }
-
-    .triangle8 {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 155.25px 50.125px 0 78px;
-        border-color: gray transparent transparent transparent;
-        right: -8%;
-    }
-
-    .triangle9 {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 78.25px 59.125px 0 171px;
-        border-color: gray transparent transparent transparent;
-        left: 0;
-    }
-
-    .triangle10 {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 78.25px 59.125px 0 171px;
-        border-color: gray transparent transparent transparent;
-        left: 0;
-    }
+    opacity: 0.1;
 }
