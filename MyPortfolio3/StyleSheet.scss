@@ -658,6 +658,7 @@ input[type="radio"]:checked + div {
     ul#nav {
         @include transition($fast);
         margin-top: 122px;
+        margin-right: 75px;
         background-color: transparent;
         z-index: 9;
 
@@ -717,10 +718,11 @@ input[type="radio"]:checked + div {
             bottom: 299px;
             margin: 0;
             @include transition($fast);
-                    -moz-transition-delay: .5s;
-        -o-transition-delay: .5s;
-        -webkit-transition-delay: .5s;
-        transition-delay: .5s;
+            -moz-transition-delay: .5s;
+            -o-transition-delay: .5s;
+            -webkit-transition-delay: .5s;
+            transition-delay: .5s;
+
             li {
                 display: block;
                 height: 70px;
@@ -1485,12 +1487,32 @@ input[type="checkbox"]#contactopen:checked ~ div {
     }
 }
 
+
+//MOBILE
 @media screen and (max-width: 1065px) {
 
 
-    #topmenu #ul {
-        li {
-            margin: 0 5px !important;
+    #topmenu {
+        width: 100%;
+        padding: 20px 0;
+
+        h1{padding-left:5%;}
+
+
+        &.small ul#nav {
+            margin-top: 100px;
+        }
+
+        ul#nav {
+            float:left;
+            margin-top: 158px;
+
+            li {
+                display:block;
+                padding: 9px 4%;
+                margin: 10px;
+                background-color: rgb(11, 11, 12);
+            }
         }
     }
 

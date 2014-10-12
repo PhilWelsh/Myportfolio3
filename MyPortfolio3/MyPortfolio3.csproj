@@ -120,6 +120,7 @@
     <Content Include="OperandsStyleSheet.min.css">
       <DependentUpon>OperandsStyleSheet.css</DependentUpon>
     </Content>
+    <Content Include="skrollr.js" />
     <Content Include="StyleSheet.css">
       <DependentUpon>StyleSheet.scss</DependentUpon>
     </Content>

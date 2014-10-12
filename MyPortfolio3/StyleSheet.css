@@ -461,6 +461,7 @@ input[type="radio"]:checked + div {
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     margin-top: 122px;
+    margin-right: 75px;
     background-color: transparent;
     z-index: 9; }
     #topmenu ul#nav li {
@@ -1043,8 +1044,21 @@ input[type="checkbox"]#contactopen:checked ~ div {
     left: -20%; } }
 
 @media screen and (max-width: 1065px) {
-  #topmenu #ul li {
-    margin: 0 5px !important; }
+  #topmenu {
+    width: 100%;
+    padding: 20px 0; }
+    #topmenu h1 {
+      padding-left: 5%; }
+    #topmenu.small ul#nav {
+      margin-top: 100px; }
+    #topmenu ul#nav {
+      float: left;
+      margin-top: 158px; }
+      #topmenu ul#nav li {
+        display: block;
+        padding: 9px 4%;
+        margin: 10px;
+        background-color: #0b0b0c; }
   #slide-1 .bcg {
     background-size: 1040px 585px; }
   #skills .width-per-48 {

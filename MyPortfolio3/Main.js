@@ -3,13 +3,14 @@
     $('.single-item').slick();
 
     // Init Skrollr
+    if (window.innerWidth > 1000){
     var s = skrollr.init({
         render: function (data) {
             //Debugging - Log the current scroll position.
             //console.log(data.curTop);
         }
     });
-
+}
 
     //    // Detect if the browser is IE or not.
     //    // If it is not IE, we assume that the browser is NS.
